@@ -9,7 +9,7 @@ import sklearn.preprocessing
 import tqdm.contrib.itertools
 
 from .clustquality import apply_cluster_method, cluster_metrics_noground, calc_stage_metr_noground
-from .stageprocess import form_stages, form_stage_bands, calc_stage_distances, merge_stages_1st_step, merge_stages_2nd_step
+from .stageprocess import form_stages, form_stage_bands, form_edges_all, calc_stage_distances, merge_stages_1st_step, merge_stages_2nd_step
 
 class SDA:
     def __init__(
@@ -77,16 +77,8 @@ class SDA:
         for (st_len, k_nb_max, n_cl, n_edge_clusters) in tqdm.contrib.itertools.product(self.len_st_thr, self.k_neighb_max_thr, self.n_cl_max_thr, self.n_edge_clusters):
             part_report = { 'St_len_min': st_len, 'K_nb_max': k_nb_max, 'N_cl_max': n_cl, 'N_stages': n_edge_clusters + 1 }
 
-            # Forming st_edges_all list
-            len_min_mask = (df_st_edges['Len_min'] == st_len)
-            k_neighb_mask = (df_st_edges['K_neighb'] <= k_nb_max)
-            n_clusters_mask = (df_st_edges['N_clusters'] <= n_cl)
-            mask = len_min_mask & k_neighb_mask & n_clusters_mask
-            edges_list = df_st_edges[mask]['St_edges'].tolist()
-            edges_all = [ edge for edges in edges_list for edge in edges[1:-1] ]
-            st_edges_all = numpy.sort(edges_all).reshape(-1, 1)
-            
             # Clustering stage edges
+            st_edges_all = form_edges_all(df_st_edges, st_len, k_nb_max, n_cl)
             kwargs = { 'n_clusters': n_edge_clusters, 'random_state': self.random_state, 'n_init': 10 }
             _, labels, _ = apply_cluster_method(st_edges_all, sklearn.cluster.KMeans, **kwargs)
             
