@@ -10,5 +10,15 @@ cluster_metrics = [
     (sklearn.metrics.davies_bouldin_score, 'Dav-Bold')
 ]
 
-def cluster_metrics_noground(data: numpy.ndarray, labels_pred: numpy.ndarray) -> typing.Dict[str, float]:
-    return { name: func(data, labels_pred) for (func, name) in cluster_metrics }
+METRIC_NAMES = [ metric[1] for metric in cluster_metrics ]
+
+def cluster_metrics_noground(
+    data: numpy.ndarray,
+    labels_pred: numpy.ndarray,
+    metric_names: typing.List[str] = METRIC_NAMES
+) -> typing.Dict[str, float]:
+    return {
+        name: func(data, labels_pred)
+        for (func, name) in cluster_metrics
+        if name in metric_names
+    }

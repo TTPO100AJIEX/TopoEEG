@@ -1,4 +1,3 @@
-from .apply_cluster_method import apply_cluster_method
 from .calc_stage_metr_noground import calc_stage_metr_noground
 from .cluster_metrics_ground import cluster_metrics_ground
 from .cluster_metrics_noground import cluster_metrics_noground

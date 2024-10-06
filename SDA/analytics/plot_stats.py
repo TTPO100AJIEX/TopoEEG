@@ -8,7 +8,6 @@ import matplotlib.patches as ptchs
 from .. import stageprocess
 from .stage_timing import stage_timing
 from .edge_statistics import edge_statistics
-from ..clustquality import apply_cluster_method
 
 def plot_stats(features: numpy.ndarray, epochs: mne.Epochs, result: dict, df_st_edges: pandas.DataFrame) -> plt.Figure:
     fig, ax = plt.subplots(1, 1, figsize = (7.5, 4))
@@ -40,7 +39,7 @@ def plot_stats(features: numpy.ndarray, epochs: mne.Epochs, result: dict, df_st_
     
     st_edges_all = stageprocess.form_edges_all(df_st_edges, result['St_len_min'], result['K_nb_max'], result['N_cl_max'])
     kwargs = { 'n_clusters': result['N_stages'] - 1, 'random_state': 0, 'n_init': 10 }
-    _, labels, _ = apply_cluster_method(st_edges_all, sklearn.cluster.KMeans, **kwargs)
+    labels = sklearn.cluster.KMeans(**kwargs).fit_predict(st_edges_all)
     for i, label in enumerate(sorted(set(labels), key = list(labels).index)):
         color = plt.get_cmap('Set3')(i)
         x_sc = [ e for e, l in zip(st_edges_all, labels) if l == label ]
