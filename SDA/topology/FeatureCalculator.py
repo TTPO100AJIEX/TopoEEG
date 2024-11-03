@@ -49,10 +49,12 @@ class FeatureCalculator:
     def __init__(
         self,
         n_jobs: int = -1,
+        reduced: bool = False,
         random_state: int = 42,
         filtering_percentile: int = 10
     ):
         self.n_jobs = n_jobs
+        self.reduced = reduced
         self.random_state = random_state
         self.filtering_percentile = filtering_percentile
 
@@ -60,12 +62,21 @@ class FeatureCalculator:
     def calc_stats(self, data: numpy.ndarray, prefix: str = "") -> pandas.DataFrame:
         assert len(data.shape) == 1
         if data.shape == (0,): data = numpy.array([ 0 ])
-        stats = numpy.array([
-            numpy.max(data), numpy.mean(data), numpy.std(data), numpy.sum(data),
-            numpy.percentile(data, 25), numpy.median(data), numpy.percentile(data, 75),
-            scipy.stats.kurtosis(data), scipy.stats.skew(data), numpy.linalg.norm(data, ord = 1), numpy.linalg.norm(data, ord = 2)
-        ])
-        names = [ "max", "mean", "std", "sum", "percentile-25", "median", "percentile-75", "kurtosis", "skew", "norm-1", "norm-2" ]
+
+        if self.reduced:
+            stats = numpy.array([
+                numpy.max(data), numpy.mean(data), numpy.std(data), numpy.sum(data),
+                numpy.linalg.norm(data, ord = 1), numpy.linalg.norm(data, ord = 2)
+            ])
+            names = [ "max", "mean", "std", "sum", "norm-1", "norm-2" ]
+        else:
+            stats = numpy.array([
+                numpy.max(data), numpy.mean(data), numpy.std(data), numpy.sum(data),
+                numpy.percentile(data, 25), numpy.median(data), numpy.percentile(data, 75),
+                scipy.stats.kurtosis(data), scipy.stats.skew(data), numpy.linalg.norm(data, ord = 1), numpy.linalg.norm(data, ord = 2)
+            ])
+            names = [ "max", "mean", "std", "sum", "percentile-25", "median", "percentile-75", "kurtosis", "skew", "norm-1", "norm-2" ]
+
         return pandas.DataFrame([ numpy.nan_to_num(stats) ], columns = [ f"{prefix} {name}" for name in names ])
 
     def calc_batch_stats(self, data: numpy.ndarray, homology_dimensions: numpy.ndarray, prefix: str = "") -> pandas.DataFrame:
@@ -85,6 +96,9 @@ class FeatureCalculator:
     
 
     def calc_betti_features(self, diagrams: numpy.ndarray, prefix: str = "") -> pandas.DataFrame:
+        if self.reduced:
+            print('Skipping Betti features')
+            return pandas.DataFrame()
         print('Calculating Betti features')
         betti_curve = gtda.diagrams.BettiCurve(n_bins = 100, n_jobs = self.n_jobs)
         betti_derivative = gtda.curves.Derivative()
@@ -119,7 +133,10 @@ class FeatureCalculator:
         return pandas.DataFrame(features, columns = names)
     
     def calc_number_of_points_features(self, diagrams: numpy.ndarray, prefix: str = "") -> pandas.DataFrame:
-        print('Calculating number of point features')
+        if self.reduced:
+            print('Skipping number of points features')
+            return pandas.DataFrame()
+        print('Calculating number of points features')
         number_of_points = gtda.diagrams.NumberOfPoints(n_jobs = self.n_jobs)
         features = number_of_points.fit_transform(diagrams)
         names = [ f'{prefix} numberofpoints dim-{dim}' for dim in number_of_points.homology_dimensions_ ]
@@ -130,6 +147,8 @@ class FeatureCalculator:
             print('Calculating amplitude features')
             features = [ ]
             for metric in tqdm.tqdm(AMPLITUDE_METRICS, desc = f'{prefix} amplitudes'):
+                if self.reduced and (metric['id'] == 'betti-1' or metric['id'] == 'betti-2'):
+                    continue
                 features.append(self.calc_amplitude_features(diagrams, prefix, **metric))
             return pandas.concat(features, axis = 1)
         else:

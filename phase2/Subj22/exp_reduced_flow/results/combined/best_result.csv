@@ -1,0 +1,2 @@
+,St_len_min,K_nb_max,N_cl_max,Cl_cen,Len_min,St_edges,N_stages,Longest_stage,Shortest_stage,Avg_stage_length,Ward_dist,Cen_dist,Silh,Cal-Har,Dav-Bold,Avg-Silh,Avg-Cal-Har,Avg-Dav-Bold
+0,20,50,20,Median,40,[   0  257  317  370  422  475  560  609 2120],8,1511,49,265.0,16133.397871689896,21.340267853518736,0.04934636094220659,79.75804282807262,5.031277027601217,0.1683413107367866,15.80734497927924,3.717503028244618

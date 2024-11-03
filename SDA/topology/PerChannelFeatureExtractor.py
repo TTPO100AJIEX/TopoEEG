@@ -29,6 +29,7 @@ class PerChannelFeatureExtractor:
         
         homology_dimensions = [ 1, 2 ],
         
+        reduced: bool = False,
         filtering_percentile: int = 10,
 
         n_jobs: int = -1,
@@ -42,6 +43,7 @@ class PerChannelFeatureExtractor:
 
         self.homology_dimensions = homology_dimensions
 
+        self.reduced = reduced
         self.filtering_percentile = filtering_percentile
 
         self.n_jobs = n_jobs
@@ -145,8 +147,7 @@ class PerChannelFeatureExtractor:
         if self.features_file is not None and os.path.exists(self.features_file):
             print(f'Got features from {self.features_file}')
             return pandas.read_feather(self.features_file)
-
-        calculator = FeatureCalculator(filtering_percentile = self.filtering_percentile, n_jobs = self.n_jobs)
+        calculator = FeatureCalculator(filtering_percentile = self.filtering_percentile, n_jobs = self.n_jobs, reduced = self.reduced)
         features_raw = calculator.calc_features(diagrams)
         features = pandas.concat([ features_raw.iloc[i::n_channels, :].reset_index(drop = True) for i in range(n_channels) ], axis = 1)
         features.columns = [ f"channel-{i}{feature_name}" for i in range(n_channels) for feature_name in features_raw ]

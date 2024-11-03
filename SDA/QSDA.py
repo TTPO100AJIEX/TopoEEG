@@ -33,7 +33,7 @@ class QSDA(SDA):
         score_function: ScoreFunction = ScoreFunction.MULTIPLE,
         scores_folder: typing.Optional[str] = None,
         
-        threshold: int = 2 / 3,
+        threshold: typing.Union[int, float] = 2 / 3,
         min_unique_values: int = 40,
 
         # stage 1
@@ -186,8 +186,16 @@ class QSDA(SDA):
             scores = pandas.DataFrame(list(tqdm.tqdm(scores, total = features.shape[1], desc = 'scores')))
             scores["normalized_score"] = sklearn.preprocessing.MinMaxScaler().fit_transform(scores[["score"]])
             scores.to_csv(scores_file, index = False)
+
+        if isinstance(self.threshold, int):
+            score_values = scores["normalized_score"].to_numpy()
+            score_values = numpy.sort(score_values)[::-1]
+            threshold = numpy.round(score_values[self.threshold], 2)
+        else:
+            threshold = self.threshold
+        print('Using threshold', threshold)
         
-        score_filter = scores["normalized_score"] >= self.threshold
+        score_filter = scores["normalized_score"] >= threshold
         unique_values_filter = scores["unique_values"] >= self.min_unique_values
 
         feature_idx = list(scores[score_filter & unique_values_filter]["name"])

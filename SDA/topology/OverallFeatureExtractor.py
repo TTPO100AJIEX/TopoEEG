@@ -25,6 +25,7 @@ class OverallFeatureExtractor:
         
         homology_dimensions = [ 1, 2, 3 ],
         
+        reduced: bool = False,
         filtering_percentile: int = 10,
 
         n_jobs: int = -1,
@@ -38,6 +39,7 @@ class OverallFeatureExtractor:
 
         self.homology_dimensions = homology_dimensions
 
+        self.reduced = reduced
         self.filtering_percentile = filtering_percentile
 
         self.n_jobs = n_jobs
@@ -93,7 +95,7 @@ class OverallFeatureExtractor:
             print(f'Got features from {self.features_file}')
             return pandas.read_feather(self.features_file)
 
-        calculator = FeatureCalculator(filtering_percentile = self.filtering_percentile, n_jobs = self.n_jobs)
+        calculator = FeatureCalculator(filtering_percentile = self.filtering_percentile, n_jobs = self.n_jobs, reduced = self.reduced)
         features = calculator.calc_features(diagrams, prefix = 'overall')
         print(f'Features: {features.shape}')
         

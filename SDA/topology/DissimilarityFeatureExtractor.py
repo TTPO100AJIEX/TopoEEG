@@ -26,6 +26,7 @@ class DissimilarityFeatureExtractor:
         
         homology_dimensions = [ 1, 2, 3, 4, 5 ],
         
+        reduced: bool = False,
         filtering_percentile: int = 10,
 
         n_jobs: int = -1,
@@ -39,6 +40,7 @@ class DissimilarityFeatureExtractor:
 
         self.homology_dimensions = homology_dimensions
 
+        self.reduced = reduced
         self.filtering_percentile = filtering_percentile
 
         self.n_jobs = n_jobs
@@ -105,7 +107,7 @@ class DissimilarityFeatureExtractor:
             return pandas.read_feather(self.features_file)
 
         n_dissim = diagrams.shape[0] // n_epochs
-        calculator = FeatureCalculator(filtering_percentile = self.filtering_percentile, n_jobs = self.n_jobs)
+        calculator = FeatureCalculator(filtering_percentile = self.filtering_percentile, n_jobs = self.n_jobs, reduced = self.reduced)
         features_raw = calculator.calc_features(diagrams)
         features = pandas.concat([ features_raw.iloc[i::n_dissim, :].reset_index(drop = True) for i in range(n_dissim) ], axis = 1)
         features.columns = [ f"dissim-{i}{feature_name}" for i in range(n_dissim) for feature_name in features_raw ]
@@ -119,6 +121,8 @@ class DissimilarityFeatureExtractor:
 
     def extract(self, data: numpy.ndarray) -> pandas.DataFrame:
         set_random_seed(self.random_state)
+        if self.reduced:
+            return pandas.DataFrame()
         
         if self.features_file is not None and os.path.exists(self.features_file):
             return self.calculate_features(None, None)
