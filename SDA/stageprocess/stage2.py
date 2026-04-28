@@ -33,7 +33,11 @@ def stage2_iter(
 ) -> pandas.DataFrame:
     # Clustering stage edges
     st_edges_all = form_edges_all(df_st_edges, st_len, k_nb_max, n_cl)
-    kwargs = { 'n_clusters': n_edge_clusters, 'random_state': random_state, 'n_init': 10 }
+    kwargs = {
+        'n_clusters': min(n_edge_clusters, len(numpy.unique(st_edges_all))),
+        'random_state': random_state,
+        'n_init': 10
+    }
     labels = sklearn.cluster.KMeans(**kwargs).fit_predict(st_edges_all)
 
     # Form stages by centers of clusters (median, mean, mode)

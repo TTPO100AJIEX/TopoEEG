@@ -1,18 +1,19 @@
 import os
+import typing
 
 import numpy
 import matplotlib.colors
 
-def draw_sources_heatmap(scores: list):
-    svg = open(f"{os.path.dirname(__file__)}/templates/draw_sources_heatmap.svg", "r").read()
+def draw_sources_heatmap(scores: typing.Dict[str, float], template: str = 'draw_sources_heatmap'):
+    svg = open(f"{os.path.dirname(__file__)}/templates/{template}.svg", "r").read()
     svg = svg[svg.find('>') + 1:svg.rfind('<') - 1]
     defs = ""
 
-    min, max = numpy.min(scores), numpy.max(scores)
+    min, max = numpy.min(list(scores.values())), numpy.max(list(scores.values()))
     colors = [[ 1, 0.25, 0 ], [ 1, 0.66, 0 ], [ 1, 0.75, 0 ], [ 0.66, 0.8, 0 ], [ 0.25, 1, 0 ]]
     cmap = matplotlib.colors.LinearSegmentedColormap.from_list('rg', colors, N = int((max - min) * 1000))
 
-    for id, score in enumerate(scores):
+    for id, score in scores.items():
         color = matplotlib.colors.rgb2hex(cmap(int((score - min) * 1000)))
 
         id_index = svg.index(f'id="{id}"')

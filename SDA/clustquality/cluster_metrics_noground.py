@@ -17,6 +17,13 @@ def cluster_metrics_noground(
     labels_pred: numpy.ndarray,
     metric_names: typing.List[str] = METRIC_NAMES
 ) -> typing.Dict[str, float]:
+    if len(numpy.unique(labels_pred)) <= 1:
+        return {
+            name: 0.0
+            for (_, name) in cluster_metrics
+            if name in metric_names
+        }
+
     return {
         name: func(data, labels_pred)
         for (func, name) in cluster_metrics

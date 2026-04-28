@@ -5,6 +5,7 @@
 *.tgz
 *.tar
 *.npy
+*.pkl
 *.fif
 *.feather
 

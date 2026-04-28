@@ -1,3 +1,5 @@
+import typing
+
 import mne
 import numpy
 import pandas
@@ -9,14 +11,23 @@ from .. import stageprocess
 from .stage_timing import stage_timing
 from .edge_statistics import edge_statistics
 
-def plot_stats(features: numpy.ndarray, epochs: mne.Epochs, result: dict, df_st_edges: pandas.DataFrame) -> plt.Figure:
-    fig, ax = plt.subplots(1, 1, figsize = (7.5, 4))
+def plot_stats(
+    features: numpy.ndarray,
+    epochs: mne.Epochs,
+    result: dict,
+    df_st_edges: pandas.DataFrame,
+    ax = None,
+    edges_true: typing.List[numpy.ndarray] = None
+) -> plt.Figure:
+    if ax is None:
+        fig, ax = plt.subplots(1, 1, figsize = (7.5, 4))
     edges = numpy.array(result['St_edges'])
 
     ymin, ymax = -0.2, 1.225
     ax.set_ylim(ymin, ymax)
     ax.grid(axis = 'y')
     ax.yaxis.tick_right()
+    ax.yaxis.set_ticks([ i / 10 for i in range(0, 11, 2) ])
     ax.set_xlim(0, len(features))
     ax.xaxis.set_visible(False)
     ax.vlines(edges[1:-1], ymin, ymax, color = 'black', linewidth = 1) # Stage boundaries
@@ -27,9 +38,21 @@ def plot_stats(features: numpy.ndarray, epochs: mne.Epochs, result: dict, df_st_
         center = (smin + smax) / 2
         color = plt.get_cmap('Set3')(i)
         ax.axvspan(smin, smax, alpha = 0.3, color = color) # Background color
-        ax.text(center, ymax - 0.15, i + 1, fontsize = 10, fontweight = 'bold', horizontalalignment = 'center') # Name
-        ax.text(center, -0.13, '{}s'.format(round(length)), fontsize = 9, fontstyle = 'italic', horizontalalignment = 'center') # Length
+        ax.text(center, ymax - 0.17, i + 1, fontweight = 'bold', horizontalalignment = 'center') # Name
+        ax.text(center, -0.13, '{}s'.format(round(length)), fontstyle = 'italic', horizontalalignment = 'center') # Length
         ax.add_patch(ptchs.Rectangle((smin, -0.20), smax - smin, 0.05, edgecolor = 'black', facecolor = color, fill = True, lw = 1)) # Stage
+
+    if edges_true is not None:
+        ax.set_ylim(-0.45, ymax)
+        ax.text(25, -0.29, 'Target stages', horizontalalignment = 'left', fontweight='bold') # Length
+    
+        st_time_len = stage_timing(edges_true, epochs).iloc[1]
+        st_bands, _ = stageprocess.form_stage_bands(edges_true)
+        for i, ((smin, smax), length) in enumerate(zip(st_bands, st_time_len)):
+            center = (smin + smax) / 2
+            color = plt.get_cmap('Set3')(i)
+            ax.text(center, -0.38, '{}s'.format(round(length)), fontstyle = 'italic', horizontalalignment = 'center') # Length
+            ax.add_patch(ptchs.Rectangle((smin, -0.45), smax - smin, 0.05, edgecolor = 'black', facecolor = color, fill = True, lw = 1)) # Stage
 
     stats = edge_statistics(features, edges)
     for idx, column in enumerate(stats):

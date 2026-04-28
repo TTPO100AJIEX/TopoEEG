@@ -113,7 +113,7 @@ class OverallFeatureExtractor:
         
         if self.diagrams_file is not None and os.path.exists(self.diagrams_file):
             diagrams = self.calculate_persistence(None)
-            return self.calculate_features(data.shape[1], diagrams)
+            return self.calculate_features(diagrams)
         
         point_clouds = self.get_point_clouds(data)
         diagrams = self.calculate_persistence(point_clouds)
