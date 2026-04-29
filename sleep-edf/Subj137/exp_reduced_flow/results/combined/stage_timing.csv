@@ -1,0 +1,4 @@
+,0,1,2,3,4,5
+"Start-end time, sec","(np.float64(4290.0), np.float64(10530.0))","(np.float64(10545.0), np.float64(12300.0))","(np.float64(12315.0), np.float64(28770.0))","(np.float64(28785.0), np.float64(56670.0))","(np.float64(56685.0), np.float64(81405.0))","(np.float64(81420.0), np.float64(83385.0))"
+"Time length, sec",6240.0,1755.0,16455.0,27885.0,24720.0,1965.0
+Number of epochs,417,118,1098,1860,1649,132
