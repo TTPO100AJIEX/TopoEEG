@@ -7,7 +7,6 @@
 *.npy
 *.pkl
 *.fif
-*.pkl
 *.feather
 
 __pycache__/
