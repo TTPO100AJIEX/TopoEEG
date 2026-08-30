@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{SDA}
+Ekaterina Mikhaylets, Alexandra~M. Razorenova, Vsevolod Chernyshev, et~al.
+\newblock Sda: a data-driven algorithm that detects functional states applied
+  to the eeg of guhyasamaja meditation.
+\newblock {\em Frontiers in Neuroinformatics}, 17, 2024.
+
+\bibitem{edelsbrunner2010computational}
+H.~Edelsbrunner and J.~Harer.
+\newblock {\em Computational Topology: An Introduction}.
+\newblock Applied Mathematics. American Mathematical Society, 2010.
+
+\bibitem{M_moli_2019}
+Facundo Mémoli and Kritika Singhal.
+\newblock A primer on persistent homology of finite metric spaces.
+\newblock {\em Bulletin of Mathematical Biology}, 81(7):2074–2116, May 2019.
+
+\bibitem{SleepEdf}
+B.~Kemp, A.H. Zwinderman, B.~Tuk, H.A.C. Kamphuisen, and J.J.L. Oberye.
+\newblock Analysis of a sleep-dependent neuronal feedback loop: the slow-wave
+  microcontinuity of the eeg.
+\newblock {\em IEEE Transactions on Biomedical Engineering}, 47(9):1185--1194,
+  2000.
+
+\end{thebibliography}

@@ -1,0 +1,220 @@
+\documentclass[final]{beamer}
+
+\usepackage[scale=1.16]{beamerposter}
+\usetheme{confposter}
+
+\setbeamercolor{block title}{fg=ngreen,bg=white}
+\setbeamercolor{block body}{fg=black,bg=white}
+\setbeamercolor{block alerted title}{fg=white,bg=dblue!70}
+\setbeamercolor{block alerted body}{fg=black,bg=dblue!10}
+
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\setlength{\paperwidth}{36in}
+\setlength{\paperheight}{48in}
+\setlength{\sepwid}{0.024\paperwidth}
+\setlength{\onecolwid}{0.22\paperwidth}
+\setlength{\twocolwid}{0.464\paperwidth}
+\setlength{\topmargin}{-0.5in}
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+
+\graphicspath{{figures/}}
+
+\title{Unsupervised Functional Stage Detection From EEG \\ Using Topological Data Analysis}
+\author{Aleksandr Abramov, Ekaterina Mikhaylets, Vsevolod Chernyshev, Alexander Kaplan, Fedor Ratnikov}
+\institute{HSE University (Moscow) \quad Ulm University \quad Lomonosov Moscow State University}
+
+\addtobeamertemplate{block end}{}{\vspace*{0.8ex}}
+\addtobeamertemplate{block alerted end}{}{\vspace*{0.8ex}}
+
+\newcommand{\posterfig}[3][\linewidth]{%
+  \par\vspace{0.1in}
+  \centering\includegraphics[width=#1,keepaspectratio]{#2}\par
+  {\centering\small\parbox{\linewidth}{\centering #3}\par}
+  \par\vspace{0.12in}
+}
+
+\newcommand{\posterfigpair}[4]{%
+  \par\vspace{0.06in}
+  \begin{columns}[T,totalwidth=\linewidth]
+  \begin{column}{0.48\linewidth}
+  \centering\includegraphics[width=0.92\linewidth,keepaspectratio]{#1}\par
+  {\centering\small\parbox{\linewidth}{\centering #2}\par}
+  \end{column}
+  \begin{column}{0.48\linewidth}
+  \centering\includegraphics[width=0.92\linewidth,keepaspectratio]{#3}\par
+  {\centering\small\parbox{\linewidth}{\centering #4}\par}
+  \end{column}
+  \end{columns}
+  \par\vspace{0.06in}
+}
+
+\begin{document}
+
+\begin{frame}[t]
+
+\begin{columns}[t]
+
+\begin{column}{\sepwid}\end{column}
+
+% ---- Column 1 ----
+\begin{column}{\onecolwid}
+
+\begin{alertblock}{Objectives}
+
+Assess whether \textbf{topological data analysis (TDA)} can support unsupervised detection of functional EEG stages with the state-detecting algorithm (SDA)~\cite{SDA}:
+\begin{itemize}
+\item Test TDA as an alternative to traditional spectral features for stage boundary detection
+\item Compare both approaches on Guhyasamaja meditation EEG and public sleep-edf recordings
+\item Determine whether topology complements or replaces spectral structure in this task
+\end{itemize}
+
+\end{alertblock}
+
+\begin{block}{Introduction}
+
+EEG segmentation is largely manual. Recently presented \textbf{SDA}~\cite{SDA} solves the task without knowing event count or timing, and works well with spectral features (PSD, PLV, coherence). These descriptors capture frequency and correlation structure but not the spatial geometry of multichannel recordings.
+
+\textbf{TDA} studies shape and connectivity via persistent homology~\cite{edelsbrunner2010computational,M_moli_2019}. We assess whether this topological view reveals functional stages that spectral methods miss.
+
+\end{block}
+
+\begin{block}{TDA Feature Engineering}
+
+Fig.~1 summarizes the three-branch topological extraction pipeline applied to each EEG epoch. Fig.~2 shows how filtered persistence diagrams are vectorized into machine-learning-ready descriptors.
+
+\posterfig{Fig1.eps}{Fig.~1: Topological feature extraction pipeline.}
+\posterfig{Fig2.eps}{Fig.~2: Persistence diagram vectorization.}
+
+\end{block}
+
+\end{column}
+
+\begin{column}{\sepwid}\end{column}
+
+% ---- Column 2, 3 ----
+\begin{column}{\twocolwid}
+
+\begin{columns}[T,totalwidth=\dimexpr\twocolwid-0.4cm\relax]
+
+\begin{column}{0.47\textwidth}
+
+\begin{block}{Datasets}
+
+\textbf{Meditation.}
+\begin{itemize}
+\item 30 Tibetan Buddhist monks practicing Guhyasamaja Tantra; 8 canonical stages; recordings from three field expeditions
+\item 38 or 32 scalp electrodes split into 11 regions of interest; 1-s epochs after artifact removal; compared against 765 spectral baseline features from \cite{SDA}
+\end{itemize}
+
+\vspace{0.08in}
+\textbf{Sleep.}
+\begin{itemize}
+\item 153 whole-night PSG recordings from sleep-edf~\cite{SleepEdf} (Sleep Cassette Study)
+\item Resampled to 50\,Hz; 15-s non-overlapping epochs; expert stage annotations for external evaluation
+\item At most 10 functional stages predicted per subject, matched to expert labels
+\end{itemize}
+
+\end{block}
+
+\end{column}
+
+\begin{column}{0.47\textwidth}
+
+\begin{block}{Methods}
+
+\begin{itemize}
+\item \textit{SDA}~\cite{SDA}: Ward clustering with temporal connectivity; K-Means consensus; \textbf{adapted silhouette} quality metric
+\item \textit{TDA:} three extraction branches (pipeline in Figs.~1--2) yield $\sim$20,000 descriptors: Taken's embeddings \& Pearson dissimilarity $\rightarrow$ Vietoris--Rips filtrations $\rightarrow$ persistence diagrams $\rightarrow$ vectorization $\rightarrow$ 15 PCA components.
+\item \textit{QSDA \& IV:} feature selection based on single-feature SDA ranking and information-value filtering of weak descriptors
+\item \textit{Experiments:} spectral vs.\ topology on meditation; surrogate data and statistical tests for validation; three feature sets on sleep vs.\ expert labels
+\end{itemize}
+
+\end{block}
+
+\end{column}
+
+\end{columns}
+
+\begin{alertblock}{Important Result}
+
+\begin{itemize}
+\item Topological features \textbf{match or outperform} spectral baselines for SDA on both meditation and sleep-edf datasets, and are more consistent with expert labels
+\item \textbf{QSDA} improves over the full descriptor set and is coherent with IV; frontal electrodes carry the most informative features on average (Figs.~3,~5)
+\item TDA captures \textbf{complementary geometry} missed by spectra --- including high-dimensional cocycles at meditation transitions (Fig.~4)
+\item Quality gains \textbf{justify} the computational expenses with potential for optimization
+\item \textbf{Statistical significance} is confirmed with surrogate data, extensive experiments, and Mann-Witney U-test with Bonferroni correction
+\end{itemize}
+
+\end{alertblock}
+
+\begin{block}{Results}
+
+\textbf{Meditation.} QSDA-filtered topological features beat the 765 spectral baseline for most subjects (Fig.~3) yet agree on the most stable boundaries. Persistence amplitudes from frontal electrodes rank highest on average (Fig.~5); Subject~2 cocycles (Fig.~4) localize to limbic regions at stages 1, 4, and 7, highlighting entry to and exit from meditation. Combined descriptors often yield the most compact clusters.
+
+\textbf{Sleep.} Topology yields denser, more expert-aligned partitions with consistently tighter scatter-plots; combined spectral and topology features add no benefit. With seven PSG channels and no QSDA pruning, unchanged hyperparameters still favored topology. Ten sought stages matched interpretable expert-label subsets: adapted silhouette $0.030 \pm 0.009 \rightarrow 0.228 \pm 0.010$; Fowlkes--Mallows index $0.843 \pm 0.017 \rightarrow 0.911 \pm 0.013$.
+
+\end{block}
+
+\posterfig{Fig3.eps}{Fig.~3: Adapted silhouette for 30 meditation subjects (original vs.\ shuffled).}
+\posterfigpair{Fig4.eps}{Fig.~4: Dimension-5 representative cocycles by brain region and stage (Subject~2).}{Fig5.eps}{Fig.~5: QSDA scores by electrode (30 subjects).}
+
+\end{column}
+
+\begin{column}{\sepwid}\end{column}
+
+% ---- Column 4 ----
+\begin{column}{\onecolwid}
+
+\begin{block}{Validation}
+
+\textbf{Robustness.} Noise changed scores by at most a factor of three; shuffling collapsed quality by tens of times. Best boundaries emerged from combined descriptors. Mann--Whitney indicates 30\% of features differ significantly between adjacent stages (none for shuffled epochs).
+
+\textbf{Feature quality.} QSDA and IV agree on valuable descriptors; the space was pruned from $\sim$20,000 to $\sim$4,500 features. Frontal electrodes dominate on average, with subject-specific variation. Amplitude means, vector norms, and persistence silhouettes ranked highest; percentiles and skew were least informative. Pearson dissimilarity features exposed interesting patterns but ranked lowest overall and were pruned.
+
+\end{block}
+
+\begin{block}{Conclusion}
+
+TDA is a practical robust alternative to spectral features for unsupervised SDA-based EEG stage detection on continuous processes. Topology and spectra capture \textbf{complementary} structure and are best used together. \textbf{QSDA} efficicently prunes unimportant descriptors and scales well. Exploring representative cocycles is key for interpretability and future work.
+
+\end{block}
+
+\begin{block}{References}
+
+\bibliographystyle{unsrt}
+\small{\bibliography{references}}
+
+\end{block}
+
+\setbeamercolor{block title}{fg=red,bg=white}
+
+\begin{block}{Acknowledgements}
+
+\small{Supported by the Russian Science Foundation, Grant No. 24-68-00030.}
+
+\end{block}
+
+\setbeamercolor{block alerted title}{fg=black,bg=norange}
+\setbeamercolor{block alerted body}{fg=black,bg=white}
+
+\begin{alertblock}{Contact}
+
+\begin{itemize}
+\item \href{mailto:asabramov@edu.hse.ru}{asabramov@edu.hse.ru}
+\item Faculty of Computer Science, HSE University
+\end{itemize}
+
+\end{alertblock}
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+\end{document}

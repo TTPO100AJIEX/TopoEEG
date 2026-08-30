@@ -1,0 +1,685 @@
+%   Journal of Neural Engineering %
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL old_paper.tex   Sat Oct 11 17:29:50 2025
+%DIF ADD new_paper.tex   Sat Oct 11 17:29:00 2025
+
+\pdfminorversion=4
+\documentclass[10pt]{iopart}
+\usepackage{graphicx}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}} %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+\lstset{extendedchars=\true,inputencoding=utf8}
+
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+\title[Finding hidden functional states from EEG based on topological features]
+        {Finding hidden functional states from EEG based on topological features}
+
+\begin{abstract}
+
+\noindent{\it Objective.}
+The \DIFdelbegin \DIFdel{analysis }\DIFdelend \DIFaddbegin \DIFadd{segmentation }\DIFaddend of electroencephalograms (EEG) is primarily a manual, routine task performed exclusively by experts. Recent studies have addressed this issue and proposed the state-detecting algorithm (SDA) --- an automated technique to detect \DIFdelbegin \DIFdel{the }\DIFdelend functional stages with minimal human intervention. The method proved effective \DIFdelbegin \DIFdel{on recordings from Guhyasamaja }\DIFdelend \DIFaddbegin \DIFadd{for recordings of Guhyasamaja Tantra }\DIFaddend meditation practice using spectral features. This article introduces an alternative approach to feature engineering for \DIFdelbegin \DIFdel{SDA--based }\DIFdelend \DIFaddbegin \DIFadd{SDA based }\DIFaddend on a novel field of topological data analysis (TDA). The applied methods aim to explore the spatial structure of the data, which is known to yield interesting \DIFdelbegin \DIFdel{, }\DIFdelend \DIFaddbegin \DIFadd{and }\DIFaddend interpretable results when solving various problems.
+\textit{Approach.}
+We propose an algorithm to extract a comprehensive topological description of the EEG with \DIFdelbegin \DIFdel{almost 20,000 }\DIFdelend \DIFaddbegin \DIFadd{several thousand }\DIFaddend features and suggest QSDA\DIFdelbegin \DIFdel{--- }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend a feature selection framework based on the performance of SDA\DIFdelbegin %DIFDELCMD < \@%%%
+\DIFdel{.Then, we }\DIFdelend \DIFaddbegin \DIFadd{.}\@ \DIFadd{We then }\DIFaddend study the behavior of four typical dimensionality reduction techniques and employ information value analysis (IV) to \DIFdelbegin \DIFdel{explore }\DIFdelend \DIFaddbegin \DIFadd{confirm }\DIFaddend the significance of the features \DIFdelbegin \DIFdel{. Finally, we detect the brain regions }\DIFdelend \DIFaddbegin \DIFadd{and establish the techniques }\DIFaddend that produce the most valuable \DIFdelbegin \DIFdel{data }\DIFdelend \DIFaddbegin \DIFadd{characteristics }\DIFaddend for the task\DIFdelbegin \DIFdel{based on IV and QSDA scores}\DIFdelend \DIFaddbegin \DIFadd{. Finally, we explore the results with shuffled and noisy data to verify the stability of the approach}\DIFaddend .
+\textit{Main results.}
+We applied the \DIFdelbegin \DIFdel{approach to the }\DIFdelend \DIFaddbegin \DIFadd{procedure to 30 }\DIFaddend EEG recordings of \DIFdelbegin \DIFdel{the meditation practice performed by 30 Tibetan monks and thoroughly analyzed the first 3. }\DIFdelend \DIFaddbegin \DIFadd{Tibetan meditation practice and 153 polysomnographic recordings of human sleep. }\DIFaddend The proposed method yielded well-separated stage boundaries for all subjects, suggesting that TDA complements \DIFaddbegin \DIFadd{or even supercedes }\DIFaddend the spectral features and reveals new, previously unknown patterns. Moreover, \DIFdelbegin \DIFdel{QSDA effectively filtered out the noisy features and appeared consistent with the IV}%DIFDELCMD < \@%%%
+\DIFdel{. Finally, the approach was confirmed statistically stable, showing poor quality when applied to }\DIFdelend \DIFaddbegin \DIFadd{similar results for noisy data and poor quality with }\DIFaddend randomly shuffled epochs \DIFaddbegin \DIFadd{confirmed the robustness of the technique}\DIFaddend .
+\textit{Significance.}
+\DIFdelbegin \DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{This }\DIFaddend study proves the existence of significant patterns in the spatial structure of \DIFdelbegin \DIFdel{the EEG }\DIFdelend \DIFaddbegin \DIFadd{EEG signals}\DIFaddend , which may have interesting physiological interpretations leading to more effective and robust functional stage detection. \DIFdelbegin \DIFdel{The proposed feature selection framework appeared practical and may apply to other features}\DIFdelend \DIFaddbegin \DIFadd{We believe that most outcomes, including the localization of the best features by brain regions, may be of particular interest to the scientific community}\DIFaddend .
+
+\end{abstract}
+
+\vspace{2pc}
+\noindent{\it Keywords\/}: EEG, topological data analysis, state-detecting algorithm, functional states, feature selection
+
+\submitto{\JNE}
+
+\ioptwocol{}
+
+\section{Introduction}
+
+EEG signals are a powerful tool for studying human brain activity and diagnosing numerous diseases and abnormalities. However, its analysis is usually performed manually, and automation in the field is vastly limited to \DIFdelbegin \DIFdel{particular }\DIFdelend \DIFaddbegin \DIFadd{specific }\DIFaddend tasks. Most algorithms rely on information about events artificially created during the experiment (external interactions with the subject, reactions, responses, etc.). \DIFdelbegin \DIFdel{Nowadays}\DIFdelend \DIFaddbegin \DIFadd{Currently}\DIFaddend , the study of EEG of continuous processes that do not allow external interactions with the subject is of significant value for neurophysiology, including somnology and epilepsy detection.
+
+One such task is \DIFdelbegin \DIFdel{finding }\DIFdelend \DIFaddbegin \DIFadd{to find }\DIFaddend the boundaries of functional states in the EEG that split the recording into well-separable parts\DIFaddbegin \DIFadd{, }\DIFaddend denoting the occurrence of some naturally induced events at that time. To solve this \DIFaddbegin \DIFadd{problem}\DIFaddend , \cite{SDA} recently presented the \DIFdelbegin \DIFdel{SDA}\DIFdelend \DIFaddbegin \DIFadd{state-detecting algorithm (SDA)}\DIFaddend , which solves the problem without additional information about the events that occurred during the experiment (including their \DIFaddbegin \DIFadd{exact }\DIFaddend quantity) using traditional data clustering methods. The technique consists of two principal stages:
+\begin{enumerate}
+    \item
+        \DIFdelbegin \DIFdel{Find }\DIFdelend \DIFaddbegin \DIFadd{Finding }\DIFaddend the potential boundaries of functional states for different values of hyperparameters using a hierarchical clustering algorithm that supports a connectivity constraint;
+    \item
+        \DIFdelbegin \DIFdel{Apply }\DIFdelend \DIFaddbegin \DIFadd{Applying }\DIFaddend a suitable clustering technique to the sets of potential answers obtained in the first stage and \DIFdelbegin \DIFdel{select }\DIFdelend \DIFaddbegin \DIFadd{selecting }\DIFaddend the final boundaries that achieve the best clustering quality.
+\end{enumerate}
+
+
+To use the algorithm, one should clean and preprocess the EEG data, split it into time epochs, and embed the corresponding time series into some feature space. As shown in the original work, the method demonstrates good quality for EEG obtained from the meditation of Buddhist monks using the Tantric Guhyasamaja practice when extracting \DIFdelbegin \DIFdel{the }\DIFdelend traditional spectral features to describe the time series\DIFdelbegin \DIFdel{--- }\DIFdelend \DIFaddbegin \DIFadd{: }\DIFaddend PSD, PLV, and Coherence.
+
+However, these features mostly describe the frequencies and correlations in the time series, leaving significant portions of \DIFaddbegin \DIFadd{the }\DIFaddend information presented in the EEG \DIFdelbegin \DIFdel{signals unexplored. Nowadays}\DIFdelend \DIFaddbegin \DIFadd{unexplored. Currently}\DIFaddend , there is ongoing research on the applications of another modern approach to feature extraction --- topological data analysis (TDA), which identifies the relationships in the data by studying its geometry and spatial structure via the research of the appearance and disappearance of holes and voids in the data across \DIFdelbegin \DIFdel{different }\DIFdelend dimensions. It allows for the quantification of different structural characteristics of the signal, which are known to be more convenient for some problems, including in physiology, can achieve better quality, and the results may be relatively easy to interpret.
+
+Numerous recent studies \DIFdelbegin \DIFdel{show }\DIFdelend \DIFaddbegin \DIFadd{have shown }\DIFaddend that TDA demonstrates high quality in solving various problems, including time series and EEG in particular. For example, \cite{chazal2024topologicalanalysisdetectinganomalies,rai2024identifyingextremeeventsstock,heo2024persistenthomologyfeaturedtime,chr├⌐tien2024timetopologicalanalysiseeg} \DIFdelbegin \DIFdel{present }\DIFdelend \DIFaddbegin \DIFadd{presented }\DIFaddend numerous theoretically guaranteed approaches to detecting anomalies in multivariate time series, demonstrating their quality with diverse datasets ranging from synthetic, generated ones to real-world examples, including the stock market, music recordings, and epilepsy detection. \cite{dimontesano2024dynamicallymaintainingpersistenthomology} \DIFdelbegin \DIFdel{proposes }\DIFdelend \DIFaddbegin \DIFadd{proposed }\DIFaddend a data structure to maintain and recalculate the persistent homology as \DIFdelbegin \DIFdel{the }\DIFdelend epochs are added to or removed from the time series, and \cite{ost2024bananatreespersistencetime} \DIFdelbegin \DIFdel{elaborates }\DIFdelend \DIFaddbegin \DIFadd{elaborated }\DIFaddend on the real-world applications of the technique.  \cite{cai2024topologicalfeaturesearchmethod} \DIFdelbegin \DIFdel{demonstrates the applications }\DIFdelend \DIFaddbegin \DIFadd{demonstrated the application }\DIFaddend of TDA in ADHD classification, achieving exceptional results on typical datasets in the field with high precision and robustness. Finally, \cite{deng2024twostagehierarchicalexplainablefeature} \DIFdelbegin \DIFdel{suggests }\DIFdelend \DIFaddbegin \DIFadd{suggested }\DIFaddend a TDA-based feature selection framework to improve the performance of dimensionality reduction in sleep stage classification.
+
+In this study, we apply \DIFdelbegin \DIFdel{the }\DIFdelend topological data analysis to find the functional states in the EEG of \DIFdelbegin \DIFdel{a continuous process }\DIFdelend \DIFaddbegin \DIFadd{continuous processes }\DIFaddend --- the aforementioned Tantric Guhyasamaja meditation practice \DIFdelbegin \DIFdel{performed by 30 Buddhist monks}\DIFdelend \DIFaddbegin \DIFadd{and the whole-night polysomnographic (PSG) sleep}\DIFaddend . To estimate \DIFdelbegin \DIFdel{its applicability }\DIFdelend \DIFaddbegin \DIFadd{the applicability of the approach }\DIFaddend to the problem, we \DIFdelbegin \DIFdel{calculate a }\DIFdelend \DIFaddbegin \DIFadd{propose a framework for calculating a }\DIFaddend comprehensive description of \DIFdelbegin \DIFdel{almost }\DIFdelend \DIFaddbegin \DIFadd{nearly }\DIFaddend 20,000 features retrieved from \DIFdelbegin \DIFdel{different }\DIFdelend \DIFaddbegin \DIFadd{various }\DIFaddend aspects of the time series \DIFdelbegin \DIFdel{with }\DIFdelend \DIFaddbegin \DIFadd{using }\DIFaddend diverse topological methods and statistical characteristics. We \DIFdelbegin \DIFdel{also present }\DIFdelend \DIFaddbegin \DIFadd{then present QSDA, }\DIFaddend an SDA-based feature selection \DIFdelbegin \DIFdel{framework to determine }\DIFdelend \DIFaddbegin \DIFadd{technique that determines }\DIFaddend a reasonable number of features (1,\DIFdelbegin \DIFdel{500 -- 2}\DIFdelend \DIFaddbegin \DIFadd{500-2}\DIFaddend ,000) \DIFdelbegin \DIFdel{that allegedly }\DIFdelend \DIFaddbegin \DIFadd{to }\DIFaddend achieve the best quality of the final answer. \DIFaddbegin \DIFadd{We show that the approach is efficient in filtering out the least valuable features and can marginally improve the final results. }\DIFaddend Moreover, we evaluate the performance of typical dimensionality reduction techniques (PCA, UMAP, AE, RTD AE) to further decrease the number of components \DIFdelbegin \DIFdel{up }\DIFdelend to 15. \DIFdelbegin \DIFdel{Then}\DIFdelend \DIFaddbegin \DIFadd{Finally}\DIFaddend , we compare the final state boundaries computed \DIFdelbegin \DIFdel{from different features (traditional, topological, or both combined}\DIFdelend \DIFaddbegin \DIFadd{by SDA with expert annotations (for sleep data) or with the results obtained using different feature sets and data modifications (for meditation data}\DIFaddend ) and draw conclusions based on the output's quality metrics. \DIFdelbegin \DIFdel{Finally}\DIFdelend \DIFaddbegin \DIFadd{Additionally}\DIFaddend , we utilize \DIFdelbegin \DIFdel{the }\DIFdelend information value analysis to estimate the influence of individual features on the answer, confirm the stability of our feature selection algorithm, and reinforce the obtained results.
+\DIFdelbegin \DIFdel{Additionally, to ensure the statistical significance of the approach, we repeat the study for the EEG obtained by shuffling the epochs of the original data, expecting SDA to detect no good boundaries.
+}\DIFdelend 
+
+\DIFdelbegin \DIFdel{For debugging purposes and hyperparameter selection, we used only the EEG recording of object 1. The validation dataset comprised the data from objects 2 and 3, which were also thoroughly investigated in the study. Finally, the remaining 27 recordings were utilized as a final control to verify the results on a larger set. 
+}\DIFdelend \DIFaddbegin \section{\DIFadd{Datasets}}
+\DIFaddend 
+
+\DIFdelbegin \section{\DIFdel{Dataset}}
+%DIFAUXCMD
+\addtocounter{section}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsection{\DIFadd{Meditation data}}
+\DIFaddend 
+
+\DIFdelbegin \DIFdel{In the }\DIFdelend \DIFaddbegin \begin{figure*}
+    \centering
+    \includegraphics[width=0.8 \textwidth]{new_figure1.eps}
+    \caption{\DIFaddFL{Electrode placement during each expedition (left to right) and their division into 11 regions of interest.}}
+    \label{figure1}
+\end{figure*}
+
+\DIFadd{For our }\DIFaddend study, we \DIFaddbegin \DIFadd{mainly }\DIFaddend used the data collected and preprocessed in the original article~\cite{SDA} \DIFaddbegin \DIFadd{for our study}\DIFaddend . This section provides a brief description of the methods used.
+
+\DIFdelbegin \subsection{\DIFdel{Data collection}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsubsection{\DIFadd{Data collection}}
+\DIFaddend 
+
+Guhyasamaja Tantra is a traditional meditation practice that follows the strict principles enshrined in the sacred scriptures of Buddhism. Its essential part consists of \DIFdelbegin \DIFdel{8 }\DIFdelend \DIFaddbegin \DIFadd{eight }\DIFaddend subsequent stages, the \DIFdelbegin \DIFdel{duration }\DIFdelend \DIFaddbegin \DIFadd{durations }\DIFaddend of which may vary in different versions.
+
+The data used in the study \DIFdelbegin \DIFdel{is the }\DIFdelend \DIFaddbegin \DIFadd{are }\DIFaddend EEG recordings of the successful meditation of 30 Tibetan Buddhist monks practicing Guhyasamaja Tantra for many decades. The \DIFdelbegin \DIFdel{first three are referred to in this study as object 1, object 2, and object 3}\DIFdelend \DIFaddbegin \DIFadd{dataset was collected during three expeditions, each of which yielded recordings from 12, 14, and 4 monks}\DIFaddend , respectively. The signals were acquired using an NVX-52 system at a 500 Hz sampling rate with analog bandpass filtering from 0.1 to 200 Hz and a digital notch filter at 50 Hz to remove \DIFdelbegin \DIFdel{the }\DIFdelend power line noise. \DIFdelbegin \DIFdel{As a result, for objects~1 3, the recordings lasting 935, 2344, and 1302 seconds were obtained}\DIFdelend \DIFaddbegin \DIFadd{The first three recordings have been presented in the original paper~\mbox{%DIFAUXCMD
+\cite{SDA}}\hskip0pt%DIFAUXCMD
+, and are thus of the most interest in this work}\DIFaddend . 
+
+\DIFdelbegin \subsection{\DIFdel{Data preprocessing}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsubsection{\DIFadd{Data preprocessing}}
+\DIFaddend 
+
+The following data preprocessing was performed \DIFdelbegin \DIFdel{with }\DIFdelend \DIFaddbegin \DIFadd{in }\DIFaddend Python using the MNE library~\cite{MNE}. Several procedures, including a bandpass filter at frequencies of 0.9 -- 40 Hz and independent component analysis, were applied to remove artifacts unrelated to the process of interest (respiratory and muscle activity, eye blinking, heartbeat, etc.). The recordings were then divided into 1-second epochs, 10 -- 15\% of which, most deviating from the average by the power spectral density, were removed. No overlap was used when creating the epochs\DIFdelbegin \DIFdel{except for object }\DIFdelend \DIFaddbegin \DIFadd{, except for subject }\DIFaddend 1, where an overlap of 0.2 seconds was adopted to increase the amount of available data for the study. The resulting data \DIFdelbegin \DIFdel{for objects~1 3 is the arrays of 1046}\DIFdelend \DIFaddbegin \DIFadd{are arrays of epochs}\DIFaddend , \DIFdelbegin \DIFdel{2019, and 1180 epochs, respectively, }\DIFdelend where each epoch is a multidimensional time series described by a \DIFdelbegin \DIFdel{$38\times501$ matrix . Each of the 38 channels corresponds to one of the electrodes }\DIFdelend \DIFaddbegin \DIFadd{matrix with each channel corresponding to one electrode }\DIFaddend used during the experiment. \DIFaddbegin \DIFadd{The ear electrodes were excluded from the recordings, as their data primarily describe muscular activity, which is not relevant to the study.
+}\DIFaddend 
+
+\DIFaddbegin \DIFadd{Since the recordings were obtained during three separate expeditions, the data consists of three groups of EEG with slightly different sets of electrodes, as shown in~}\fref{figure1}\DIFadd{. The first expedition (12 recordings) used 38 electrodes, while the second (14 recordings) and third (4 recordings) utilized only 32 electrodes, differing in the placement of electrodes AF1, AF2, F3, and F4. }\DIFaddend For ease of analysis, similar to the original article, \DIFdelbegin \DIFdel{the electrodes were divided into 17 groups }\DIFdelend \DIFaddbegin \DIFadd{in all cases we divide the electrodes into 11 regions of interest }\DIFaddend according to the parts of the brain they recorded, as shown in \fref{figure1}: pre-frontal (\DIFdelbegin \DIFdel{Fp1, Fp2, Fpz}\DIFdelend \DIFaddbegin \DIFadd{FP}\DIFaddend ), left frontal (\DIFdelbegin \DIFdel{F3, F7, FC3, FT7}\DIFdelend \DIFaddbegin \DIFadd{LF}\DIFaddend ), midline frontal (\DIFdelbegin \DIFdel{Fz, FCz}\DIFdelend \DIFaddbegin \DIFadd{MF}\DIFaddend ), right frontal (\DIFdelbegin \DIFdel{F4, F8, FC4, FT8}\DIFdelend \DIFaddbegin \DIFadd{RF}\DIFaddend ), left central (\DIFdelbegin \DIFdel{C3, CP3}\DIFdelend \DIFaddbegin \DIFadd{LC}\DIFaddend ), midline central (\DIFdelbegin \DIFdel{Cz, CPz}\DIFdelend \DIFaddbegin \DIFadd{MC}\DIFaddend ), right central (\DIFdelbegin \DIFdel{C4, CP4}\DIFdelend \DIFaddbegin \DIFadd{RC}\DIFaddend ), left temporal (\DIFdelbegin \DIFdel{T3, T5, TP7}\DIFdelend \DIFaddbegin \DIFadd{LT}\DIFaddend ), right temporal (\DIFdelbegin \DIFdel{T4, T6, TP8}\DIFdelend \DIFaddbegin \DIFadd{RT}\DIFaddend ), left parietal (\DIFdelbegin \DIFdel{P3, P5), middle parietal (Pz), right parietal (P4, P6) , left occipital (PO3, PO7, O1), middle occipital (POz, Oz) , right occipital (PO4, PO8, O2), and two ear electrodes A1 (left) and A2 (right). However, the ear electrodes were excluded from the recordings as their data primarily describes muscular activity, which is not interesting to the study.
+    }\DIFdelend \DIFaddbegin \DIFadd{PAR), and occipital (OCC).
+}\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \begin{figure}
+%DIFDELCMD <     \centering
+%DIFDELCMD <     \includegraphics[width=0.66 \columnwidth]{old_figure1.eps}
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Location of electrodes during the experiment and their division into groups.}}
+    %DIFAUXCMD
+%DIFDELCMD < \label{figure1}
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \subsection{\DIFadd{Sleep data}}
+\DIFaddend 
+
+\DIFaddbegin \DIFadd{To validate the approach and assess its general applicability, we utilized sleep-edf~\mbox{%DIFAUXCMD
+\cite{SleepEdf,PhysioNet}}\hskip0pt%DIFAUXCMD
+: a more common, public dataset of 197 whole-night polysomnographic sleep recordings. It contains two subsets: 153 recordings from the Sleep Cassette Study (SC) and 44 recordings from the Sleep Telemetry Study (ST). In this work, we focus on the former group collected from people without any known sleep disorders.
+}
+
+\DIFadd{The data were obtained in a 1987 -- 1991 study of age effects on sleep with 77 subjects aged between 25 and 101 years. In this study, though, we discard any additional information about the subjects (including age and sex) and focus on the PSG recordings themselves. The signals contain three channels of EEG, one channel of EOG, chin EMG, body temperature, and a respiration monitoring channel. Each recording is supplied with sleep stage annotations labeled by well-trained experts. To speed up the computations and simplify the analysis of the results, we accept the following assumptions:
+}
+
+\begin{enumerate}
+    \item
+        \DIFadd{Crop the data to at most 15 minutes of wake time in both the beginning and end of the recording.
+    }\item
+        \DIFadd{Resample all channels from 100 Hz to 50 Hz, and split the data into 15-second epochs without overlaps.
+    }\item
+        \DIFadd{Discard the segments with unknown labels and combine N3 and N4 stages together as N3.
+    }\item
+        \DIFadd{Predict at most 10 sleep stages for each subject and compare them with the best-fit subset of 10 stages from the target annotation.
+}\end{enumerate}
+
+\DIFaddend \section{State-Detecting algorithm}
+
+The State-Detecting algorithm is a novel data-driven approach \DIFdelbegin \DIFdel{to }\DIFdelend \DIFaddbegin \DIFadd{for }\DIFaddend finding the functional states in the EEG from its feature description --- a matrix that maps each epoch to a feature vector of a given dimension. The technique combines two clustering methods to find the resulting edges\DIFaddbegin \DIFadd{, }\DIFaddend accounting for the continuity of the process under analysis in time. Here, we briefly review the general principles of both stages. Please refer to the original \DIFdelbegin \DIFdel{work}\DIFdelend \DIFaddbegin \DIFadd{study}\DIFaddend ~\cite{SDA} for a more detailed description.
+
+In the first step, the algorithm finds the potential boundaries of functional states using Ward's hierarchical clustering method with different values \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{for }\DIFaddend the number of sought stages and the maximum time between epochs in the connectivity matrix. \DIFdelbegin \DIFdel{Then, the }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend obtained boundaries are \DIFaddbegin \DIFadd{then }\DIFaddend sorted, and the neighboring stages are merged if they are too short or do not differ \DIFdelbegin \DIFdel{enough }\DIFdelend \DIFaddbegin \DIFadd{sufficiently }\DIFaddend by the Ward distance.
+
+\DIFdelbegin \DIFdel{During }\DIFdelend \DIFaddbegin \DIFadd{In }\DIFaddend the second step, the algorithm utilizes \DIFdelbegin \DIFdel{K-Means }\DIFdelend \DIFaddbegin \DIFadd{k-means }\DIFaddend to select the candidates for the final boundaries of functional states based on the results of the first step. For this, \DIFaddbegin \DIFadd{the }\DIFaddend SDA applies the \DIFdelbegin \DIFdel{mentioned }\DIFdelend \DIFaddbegin \DIFadd{aforementioned }\DIFaddend clustering method to the joint sets of potential boundaries obtained previously to determine the required number of stages. Finally, the algorithm computes the resulting boundaries as modes and medians of the obtained clusters merged similarly to the first stage to guarantee their sufficient length and dissimilarity.
+
+The conclusive answer is decided by an expert decision accounting for the clustering quality metrics: the Ward's and centroid distances, the silhouette coefficient, the Calinski--Harabasz index, and the Davies--Bouldin index. In this study, we primarily \DIFdelbegin \DIFdel{focused }\DIFdelend \DIFaddbegin \DIFadd{focus }\DIFaddend on the silhouette coefficient that is calculated for one object using equation \eref{eq1} and shows \DIFdelbegin \DIFdel{how similar this object is }\DIFdelend \DIFaddbegin \DIFadd{the similarity of this object }\DIFaddend to other objects in its cluster ($C_x$) in comparison with objects in different clusters ($C_y$). The single value for the entire set is obtained by averaging the results across all studied objects. The metric value ranges from -1 to 1, where positive values indicate that the object is assigned to the correct cluster, which is well separated from \DIFaddbegin \DIFadd{the }\DIFaddend other clusters. \DIFaddbegin \DIFadd{It is important to note that to account for the continuity of the studied process in time, we use a so-called adapted silhouette score computed as the average silhouette score of all pairs of clusters that are adjacent in time, since the studied EEG may contain multiple instances of the same stage that the SDA cannot merge because they are separated by another stage.
+}\DIFaddend \begin{eqnarray}
+    a(x, C_x) = {(|C_x| - 1)} ^ {-1} \sum_{y \in C_x} ||x - y||, \nonumber\\
+    b(x, C_x) = \min_{C_y \ne C_x} {|C_y|} ^ {-1} \sum_{y \in C_y} ||x - y||, \nonumber\\
+    s(x, C_x) = (b - a)~~/~~\max(a, b), \label{eq1}
+\end{eqnarray}
+
+\section{Topological data analysis}
+
+Topological data analysis is a modern approach to \DIFdelbegin \DIFdel{analyzing different kinds }\DIFdelend \DIFaddbegin \DIFadd{analyze different types }\DIFaddend of data by reducing their dimensionality without significant loss of information by studying the spatial characteristics (shape, structure, etc.) using algebraic topology. The main tools of this approach are persistent homologies and persistence diagrams, calculated for metric spaces to describe the number and stability of multidimensional `holes' in them. It has been proven that minor perturbations in the source data do not have significant effects on the results, which makes it possible to use the information contained in the diagrams to solve various \DIFdelbegin \DIFdel{machine-learning }\DIFdelend \DIFaddbegin \DIFadd{machine learning }\DIFaddend problems according to the following general principle:
+
+\begin{enumerate}
+    \item
+        Transform the input data into a metric space --- a set of points with a correctly defined distance function. For the time series, we utilized two principal approaches:
+
+        \begin{enumerate}
+            \item
+                \DIFdelbegin \DIFdel{Studying }\DIFdelend \DIFaddbegin \DIFadd{Study }\DIFaddend the behavior of distinct components of both univariate and multivariate time series with the Takens' embedding algorithm~\cite{10.1007/BFb0091924,perea2013slidingwindowspersistenceapplication}. The general \DIFdelbegin \DIFdel{ways }\DIFdelend \DIFaddbegin \DIFadd{methods }\DIFaddend to select the \DIFdelbegin \DIFdel{algorithm's hyperparameters }\DIFdelend \DIFaddbegin \DIFadd{hyperparameters of the algorithm }\DIFaddend (that is, the dimensionality of the embeddings~\cite{PhysRevA.45.3403} and the time delays between them~\cite{PhysRevA.33.1134}) aim to optimize the number of false-neighboring pairs of points and the mutual information.
+            \item 
+                \DIFdelbegin \DIFdel{Examining }\DIFdelend \DIFaddbegin \DIFadd{Examine }\DIFaddend the correlations between the components of a multivariate time series by defining the distances between them with the Pearson dissimilarity.
+        \end{enumerate}
+
+    \item 
+        Construct a sequence of nested simplicial complexes --- topological spaces homotopy equivalent to the unions of \DIFdelbegin \DIFdel{the }\DIFdelend balls of a given radius around the points from a given set for all positive values of the filtration parameter. The Nerve theorem~\cite{Borsuk1948} guarantees that the \v{C}ech complex~\cite{Cech1932}, containing the simplices for which the set of balls of a given radius around the vertices has a non-empty intersection, satisfies this property. However, its construction is computationally expensive, which makes the structure impractical. Instead, we used the approximation of the \v{C}ech complex called the Vietoris--Rips complex~\cite{Vietoris1927}, which does not satisfy the required property in general but is sufficient for most practical problems. The structure represents \DIFdelbegin \DIFdel{the }\DIFdelend unions of simple geometric figures of various dimensions (segments, triangles, tetrahedrons, etc.), called simplices, for which all pairwise distances between vertices do not exceed the filtration parameter. The general algorithm to construct these structures is to observe the appearance and disappearance of simplices with increasing $\epsilon$, although several more efficient algorithms have been proposed \cite{ZOMORODIAN2010263,rieser2024newconstructionvietorisripscomplex,Bauer_2021}. \Fref{figure2} shows \DIFdelbegin \DIFdel{the }\DIFdelend examples of \v{C}ech and Vietoris--Rips complexes for a synthetic point cloud.
+        \begin{figure}
+            \centering
+            \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\columnwidth]{old_figure2.eps}
+%DIFDELCMD <             %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\columnwidth]{new_figure2.eps}
+            \DIFaddendFL \caption{A synthetic point cloud with its \v{C}ech and Vietoris--Rips complexes for some values of the filtration parameter.}
+            \label{figure2}
+        \end{figure}\
+
+    \item 
+        Calculate the persistent homology of the resulting structure based on the `times' of appearance and disappearance of \DIFaddbegin \DIFadd{the }\DIFaddend simplices. Construct and filter (that is, remove the points closest to the diagonal, which carry little information and most likely describe the `noise' in the data) the persistence diagram\DIFaddbegin \DIFadd{, }\DIFaddend where each simplex corresponds to one point with coordinates along the `x' and `y' axes equal to the moments of its appearance in and disappearance from the complex, respectively.
+
+    \item 
+        Extract the features --- various topological and statistical characteristics --- from the persistence diagram. The principal approach studies \DIFdelbegin \DIFdel{the }\DIFdelend Betti numbers~\cite{Zomorodian2005}\DIFdelbegin \DIFdel{representing the maximum amount }\DIFdelend \DIFaddbegin \DIFadd{, which represent the maximum number }\DIFaddend of cuts before separating the surface into two parts. One can also prove that the k-th Betti number equals the quantity of k-dimensional `holes' in the original metric space, which, in turn, is equivalent to the number of simplices of dimension k. Multiple other techniques have been proposed, including the persistence entropy~\cite{10.1007/978-3-319-29228-1_11}, landscape~\cite{bubenik2015statisticaltopologicaldataanalysis}, silhouette~\cite{chazal2013stochasticconvergencepersistencelandscapes}, and amplitude. The latter is particularly interesting as a measure of the difference between a given persistence diagram and an `empty' diagram, computed based on other topological characteristics as well as methods from adjacent fields of study~\cite{kerber2016geometryhelpscomparepersistence}, such as the Wasserstein~\cite{10.1145/62212.62253} and bottleneck \DIFdelbegin \DIFdel{distance}\DIFdelend \DIFaddbegin \DIFadd{distances}\DIFaddend ~\cite{Efrat2001}. These features have \DIFdelbegin \DIFdel{proved }\DIFdelend \DIFaddbegin \DIFadd{proven }\DIFaddend effective for many classical machine learning algorithms \DIFdelbegin \DIFdel{solving }\DIFdelend \DIFaddbegin \DIFadd{to solve }\DIFaddend various problems.
+
+    \item 
+        Select the most valuable features and reduce the dimensionality of the obtained feature space to remove \DIFdelbegin \DIFdel{the }\DIFdelend noise and improve the performance of machine learning algorithms applied later. For this, we used two predominant traditional techniques --- \DIFdelbegin \DIFdel{the }\DIFdelend principal component analysis~\cite{Eckart_Young_1936} (PCA) and \DIFdelbegin \DIFdel{the }\DIFdelend autoencoder~\cite{Autoencoder} (AE) --- as well as two topology-based methods --- \DIFdelbegin \DIFdel{the }\DIFdelend uniform manifold approximation and projection~\cite{mcinnes2020umapuniformmanifoldapproximation} (UMAP) and \DIFdelbegin \DIFdel{the }\DIFdelend representation topology divergence autoencoder~\cite{trofimov2023learningtopologypreservingdatarepresentations} (RTD AE).
+\end{enumerate}
+
+\section{Feature engineering}
+
+As shown in \fref{figure3}, we employed three independent techniques to extract features from the EEG.\@
+
+\DIFaddbegin \begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{new_figure3.eps}
+    \caption{\DIFaddFL{The scheme of the algorithm for extracting the topological features from the EEG.}\@}
+    \label{figure3}
+\end{figure}
+
+\DIFaddend First, the EEG components are processed independently to analyze the records obtained at each electrode separately from \DIFaddbegin \DIFadd{the }\DIFaddend other parameters. For this, we divide the epochs --- multidimensional time series --- into sets of one-dimensional time series, each corresponding to one electrode during the experiment. Then, we calculate the optimal hyperparameters of the Takens embedding algorithm for each obtained time series. As a result, we acquire a set of hyperparameters for each epoch of each EEG component and select one value for each \DIFdelbegin \DIFdel{of them }\DIFdelend that is optimal for most epochs. Finally, we transform the original EEG into metric spaces using the Takens algorithm with the calculated best hyperparameters, construct \DIFdelbegin \DIFdel{the }\DIFdelend Vietoris--Rips complexes, and compute \DIFdelbegin \DIFdel{the }\DIFdelend persistence diagrams.
+
+This approach describes \DIFdelbegin \DIFdel{the }\DIFdelend individual EEG variables and detects most of the significant patterns in the data. However, it does not account for \DIFdelbegin \DIFdel{the }\DIFdelend correlations between the components of the time series, which may contain the information necessary to solve the problem.
+
+To address this issue, the second approach aims to analyze the relationships between \DIFaddbegin \DIFadd{the }\DIFaddend EEG components. The point clouds are obtained by calculating the Pearson dissimilarities between the channels for each epoch and all its sliding windows of a given size with a fixed step. The result is a set of matrices describing \DIFdelbegin \DIFdel{the }\DIFdelend metric spaces consisting of \DIFdelbegin \DIFdel{38 points }\DIFdelend \DIFaddbegin \DIFadd{as many points as the number of channels in the data}\DIFaddend , with distances reflecting the correlations between the corresponding components of the time series. Then, similar to other techniques, we apply \DIFdelbegin \DIFdel{the }\DIFdelend Vietoris--Rips complexes to construct \DIFdelbegin \DIFdel{the }\DIFdelend persistence diagrams and obtain the feature descriptions of the EEG.\@
+
+Eventually, we analyze the time series as a whole without explicitly focusing on specific characteristics. To do this, we employ the multidimensional Takens embedding algorithm with hyperparameters determined experimentally but kept identical for all components. The retrieved metric spaces are again processed with Vietoris--Rips complexes to obtain the resulting features.
+
+\DIFdelbegin %DIFDELCMD < \begin{figure}
+%DIFDELCMD <     \centering
+%DIFDELCMD <     \includegraphics[width=\columnwidth]{old_figure3.eps}
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{The scheme of the algorithm for extracting the topological features from the EEG.}%DIFDELCMD < \@%%%
+}
+    %DIFAUXCMD
+%DIFDELCMD < \label{figure3}
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend \subsection{Extracting features from persistence diagrams}
+
+To vectorize the persistence diagrams as part of the feature engineering process, we implemented the pipeline \DIFdelbegin \DIFdel{presented }\DIFdelend \DIFaddbegin \DIFadd{shown }\DIFaddend in \fref{figure4}\DIFdelbegin \DIFdel{, which extracts feature descriptions from persistence diagrams}\DIFdelend .
+
+\begin{figure}
+    \centering
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\columnwidth]{old_figure4.eps}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\columnwidth]{new_figure4.eps}
+    \DIFaddendFL \caption{The scheme of the pipeline to vectorize the persistence diagrams.}
+    \label{figure4}
+\end{figure}
+
+To improve the \DIFdelbegin \DIFdel{generalizing }\DIFdelend \DIFaddbegin \DIFadd{generalization }\DIFaddend ability of the features, the algorithm begins by filtering the persistence diagrams --- removing a fixed fraction of the points closest to the diagonal, hence representing the simplices with the shortest lifetimes. These usually carry little information and most likely describe the `noise' ---  the patterns present in the original data but not generic among the objects of interest. The remaining points, in turn, are the most `long-lived' simplices that disappear significantly later than they appear and are generally most interesting for the analysis. 
+
+The algorithm then calculates various topological and statistical characteristics described previously to construct a comprehensive feature description of the persistence diagram. \DIFdelbegin \DIFdel{That is}\DIFdelend \DIFaddbegin \DIFadd{Specifically}\DIFaddend , it computes the following values:
+\begin{itemize}
+    \item 
+        The statistical characteristics of the sequences of \DIFdelbegin \DIFdel{lifetimes of simplices }\DIFdelend \DIFaddbegin \DIFadd{simplex lifetimes }\DIFaddend and of simplex life midpoints, of the first derivatives of Betti curves, of the first levels of persistence landscapes, and of the persistence silhouettes of degrees 1 and 2;
+    \item 
+        The persistence entropy;
+    \item 
+        \DIFdelbegin \DIFdel{The persistence }\DIFdelend \DIFaddbegin \DIFadd{Persistence }\DIFaddend amplitudes and their vector norms of \DIFaddbegin \DIFadd{the }\DIFaddend first and second orders using the bottleneck distance, the Wasserstein distance, the Betti curves, the persistence landscapes, and the persistence silhouettes.
+\end{itemize}
+
+By the statistical characteristics of a numeric sequence or a function, that is, of a random variable, we suggest the following values:
+
+\begin{itemize}
+    \item 
+        The quantity, maximum, sum, mean, standard deviation, and various percentiles (25th, 50th, and 75th) of the elements;
+    \item 
+        The Manhattan and Euclidean norms of the input as a vector;
+    \item 
+        The skew and kurtosis of the variable, that is, the ratio of the third and fourth central moments to the cube and the fourth power of the standard deviation, respectively.
+\end{itemize}
+
+To avoid missing significant patterns, we performed all calculations not only for the entire persistence diagram but also for each simplex dimension individually. When calculating the statistical characteristics of \DIFaddbegin \DIFadd{the }\DIFaddend functions, we converted them into numeric sequences by selecting 100 values evenly over the interval of interest. Finally, we standardized all features to remove the scale factor from further decisions, which is known to improve the quality of most machine learning methods.
+
+\subsection{Feature selection}
+
+The feature engineering algorithm described earlier is designed to detect many patterns that may be present in the analyzed time series. However, this leads to \DIFaddbegin \DIFadd{an }\DIFaddend extremely high dimensionality of the resulting vectors, which is undesirable for most \DIFdelbegin \DIFdel{machine-learning }\DIFdelend \DIFaddbegin \DIFadd{machine learning }\DIFaddend methods, including SDA, and may harm the quality of the final answer, especially if most assumed patterns are not present in the time series or appear insignificant to the target variable.
+
+To address this issue, we introduce a quick state-detecting algorithm (QSDA) --- an additional step to select the most substantial features and filter out the noise that harms the final result. The algorithm operates as follows:
+\begin{enumerate}
+    \item 
+        Calculate the possible final answers --- sets of state boundaries --- considering only one of the features by running a reduced SDA (that is, SDA with most hyperparameters adjusted to decrease the number of iterations, thus improving performance, without a significant loss in quality);
+    \item
+        For every produced set of edges, generate all possible ways to decrease the number of stages by merging the adjacent ones according to the rules provided by the SDA implementation \DIFaddbegin \DIFadd{as described previously}\DIFaddend ;
+    \item
+        For every said way, calculate its quality as a \DIFdelbegin \DIFdel{function }\DIFdelend \DIFaddbegin \DIFadd{multiple }\DIFaddend of the number of stages and the average silhouette coefficient against the considered feature over all pairs of adjacent stages\DIFdelbegin \DIFdel{;
+    }\DIFdelend \DIFaddbegin \DIFadd{. This allows us to focus on the most consistently valuable features and discard those that poorly detect many stages or perfectly distinguish only a few.
+    }\DIFaddend \item 
+        Consider the maximum of the values obtained \DIFdelbegin \DIFdel{at }\DIFdelend \DIFaddbegin \DIFadd{in }\DIFaddend the previous step as the quality score of the feature;
+    \item
+        Repeat the process for all features and select those with the highest quality scores as the most informative.
+\end{enumerate}
+
+\DIFdelbegin \DIFdel{Although steps (ii) and (iii) may seem ineffective and excessive, they are essential for the algorithm as we do not want to select features that poorly detect many stages over the ones that perfectly distinguish only a few. Furthermore, step (iii) allows for flexible adjustments to the importance of the detected number of stages compared to the silhouette coefficient. For this study, we used the multiple of the number of stages and the silhouette coefficient that demonstrated the best results compared to other tested possibilities.
+}%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend One may also apply additional heuristics to remove \DIFdelbegin \DIFdel{the }\DIFdelend noisy, degenerate features, which are scored well solely because of the specifics of the approach. For example, consider a feature with \DIFdelbegin \DIFdel{just }\DIFdelend \DIFaddbegin \DIFadd{only }\DIFaddend three non-zero values at indexes 300, 600, and 900 for \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{an }\DIFaddend EEG of length 1200. \DIFdelbegin \DIFdel{Suppose at }\DIFdelend \DIFaddbegin \DIFadd{In }\DIFaddend stages 1 -- 2 the algorithm \DIFdelbegin \DIFdel{calculated }\DIFdelend \DIFaddbegin \DIFadd{might calculate }\DIFaddend the boundaries $\{ 0, 280, 320, 580, 620, 880, 920, 1200 \}$, which results in a $0.74$ average silhouette and a $5.93$ final quality score of the feature, putting it above most non-degenerate ones \DIFdelbegin \DIFdel{at }\DIFdelend \DIFaddbegin \DIFadd{in }\DIFaddend stage 5. Although the feature \DIFdelbegin \DIFdel{might }\DIFdelend \DIFaddbegin \DIFadd{may }\DIFaddend contain some relevant information, it is evidently not valuable and will harm the final result. To counteract this, we preemptively filter out all features with \DIFdelbegin \DIFdel{less }\DIFdelend \DIFaddbegin \DIFadd{fewer }\DIFaddend than 200 unique values --- \DIFdelbegin \DIFdel{about }\DIFdelend \DIFaddbegin \DIFadd{approximately }\DIFaddend 20\% of the length of the analyzed EEG.\@
+
+\subsection{Information value analysis}
+
+Information value analysis~\cite{InformationValue} is a typical approach to \DIFdelbegin \DIFdel{evaluating }\DIFdelend \DIFaddbegin \DIFadd{evaluate }\DIFaddend the influence of individual features on the target variable in binary classification problems and can be natively generalized to assess the importance of features for clusterization.
+
+Suppose $x=(x_1, x_2, \ldots, x_n)$ is a categorical feature with values from the set $\{ X_1, X_2, \ldots, X_k \}$ and $y=(y_1, y_2, \ldots, y_n)$ is a binary target variable. Then, for each value $X_i$, the weight of evidence is calculated using equation \eref{eq2} as the ratio of the shares of positive and negative objects with this value of the feature. Finally, the information value of this feature is computed using equation \eref{eq3} and is an estimate of how much the distribution of this feature coincides with the distribution of the target variable, thus showing \DIFdelbegin \DIFdel{how important this feature is }\DIFdelend \DIFaddbegin \DIFadd{the importance of this feature }\DIFaddend for the correct classification of objects.
+\DIFdelbegin \begin{eqnarray*}
+    \DIFdel{sharePos_i = numPos_i / numPos, \nonumber}\\
+    \DIFdel{shareNeg_i = numNeg_i / numNeg, \nonumber}\\
+    \DIFdel{WoE_i = shareEvents_i / shareNonEvents_i, \label{eq2}}\\
+    \DIFdel{IV = \sum_{i = 1}^{k} (sharePos_i - shareNeg_i) \cdot WoE_i, %DIFDELCMD < \label{eq3}%%%
+}\end{eqnarray*}%DIFAUXCMD
+\DIFdelend 
+
+\DIFaddbegin \begin{eqnarray}
+    \DIFadd{sharePos_i = numPos_i / numPos, \nonumber}\\
+    \DIFadd{shareNeg_i = numNeg_i / numNeg, \nonumber}\\
+    \DIFadd{WoE_i = ln(sharePos_i / shareNeg_i), \label{eq2}}\\
+    \DIFadd{IV = \sum_{i = 1}^{k} (sharePos_i - shareNeg_i) \cdot WoE_i, \label{eq3}
+}\end{eqnarray}
+\DIFaddend with:
+\begin{itemize}
+    \item
+        $numPos_i$ and $numNeg_i$ the \DIFdelbegin \DIFdel{number }\DIFdelend \DIFaddbegin \DIFadd{numbers }\DIFaddend of objects belonging to the positive and negative classes, respectively, whose value of the feature is $X_i$;
+    \item
+        $numPos$ and $numNeg$ the total \DIFdelbegin \DIFdel{number }\DIFdelend \DIFaddbegin \DIFadd{numbers }\DIFaddend of objects belonging to the positive and negative classes, respectively;
+\end{itemize}
+
+When working with quantitative features, the values are divided into several containers (we used 10) of the same length and processed as categorical based on their belonging to one or another container. For a multi-class classification problem, the information value is calculated independently for each class relative to a binary indicator variable with subsequent averaging of the values. The clusterization task is considered similarly, with each cluster treated as a separate class.
+
+Large \DIFdelbegin \DIFdel{values of the information value }\DIFdelend \DIFaddbegin \DIFadd{information values }\DIFaddend correspond to the high \DIFdelbegin \DIFdel{generalizing }\DIFdelend \DIFaddbegin \DIFadd{generalization }\DIFaddend ability of the feature and its significant influence on the correct prediction of the target variable. On the other hand, values close to zero indicate the harmfulness of the feature when making predictions.
+
+\section{Results}
+
+\DIFdelbegin \DIFdel{To analyze the applicability of topological dataanalysis to finding the hidden functional states from EEG, we compared }\DIFdelend \DIFaddbegin \subsection{\DIFadd{Meditation data}}
+
+\DIFadd{In this study, we primarily work with Guhyasamaja Tantra meditation data. First, we focus on subjects 1 -- 3 and compare }\DIFaddend the results obtained using \DIFdelbegin \DIFdel{different types of features: }\DIFdelend 765 traditional features from~\cite{SDA}, \DIFaddbegin \DIFadd{almost 20000 topological features, a subset of }\DIFaddend 1500 -- 2000 topological features selected with \DIFdelbegin \DIFdel{qSDA}\DIFdelend \DIFaddbegin \DIFadd{QSDA}\DIFaddend , and the feature space with both approaches combined. \DIFdelbegin \DIFdel{The hyperparameters were mostly deduced experimentally using the EEG of object 1, which is the shortest recording yet exhibits the most well-defined stageboundaries. Finally, we analyzed the information values of all topological featuresrelative to the result they produced and compared them with the scores and best features calculated using qSDA. }%DIFDELCMD < \@ %%%
+\DIFdelend \DIFaddbegin \DIFadd{At this stage, we determine the optimal hyperparameters, compare four dimensionality reduction algorithms, employ information value analysis, and study the scores calculated by the QSDA to select a set of approximately 4,000 topological features. The final hyperparameter values are listed in Supplementary Materials A. Then, we remove the characteristics that consistently show bad IV and QSDA quality from the computations and run the experiments for all 30 subjects to ensure the reliability of the results. }\DIFaddend To reinforce the \DIFdelbegin \DIFdel{statistical significance of our conclusions, we repeated the analysis for EEG recordingsobtained from the original ones by randomly shuffling the epochs}\DIFdelend \DIFaddbegin \DIFadd{stability of the approach, we also report the performance for Gaussian noise-corrupted recordings}\DIFaddend , expecting to \DIFdelbegin \DIFdel{detect no good stage boundaries}\DIFdelend \DIFaddbegin \DIFadd{see no significant changes in the detected stages, and shuffled EEG epochs, anticipating the detection of no good boundaries, }\DIFaddend resulting in close-to-zero quality metrics.
+
+\DIFdelbegin \subsection{\DIFdel{Objects~1 3}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsubsection{\DIFadd{Stage 1: full feature set for subjects~1 -- 3}}
+\DIFaddend 
+
+Based on \DIFdelbegin \DIFdel{our experiments }\DIFdelend \DIFaddbegin \DIFadd{the results }\DIFaddend shown in \fref{figure5}, the most stable and performant dimensionality reduction technique is \DIFdelbegin \DIFdel{the }\DIFdelend PCA, which we thus used further throughout the experiment to reduce the feature spaces to 15 components  to improve comparability and filter out the noise, capturing only the most significant patterns. The features generated by UMAP demonstrate good clusterization quality independent of the number of components for all subjects but have relatively low explained variance, which \DIFdelbegin \DIFdel{massively }\DIFdelend \DIFaddbegin \DIFadd{greatly }\DIFaddend hinders their interpretability. On the other hand, the traditional autoencoder reflects the original feature space well and demonstrates quality similar to PCA.\@ However, for further calculations, as mentioned previously, we selected the latter, \DIFaddbegin \DIFadd{a }\DIFaddend more deterministic approach to speed up the computations and facilitate comparison with the original paper's results. Interestingly, the topological autoencoder produces mostly meaningless embeddings and has \DIFaddbegin \DIFadd{a }\DIFaddend low explained variance\DIFaddbegin \DIFadd{, }\DIFaddend while also achieving the worst results among all \DIFaddbegin \DIFadd{the }\DIFaddend methods. 
+
+\begin{figure}
+    \centering
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\columnwidth]{old_figure5.eps}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\columnwidth]{new_figure5.eps}
+    \DIFaddendFL \caption{
+        Explained variance (top) and achieved resulting quality (bottom) of four dimensionality reduction algorithms for \DIFdelbeginFL \DIFdelFL{objects }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{subjects }\DIFaddendFL 1 (left), 2 (middle), and 3 (right).
+    }
+    \label{figure5}
+\end{figure}
+
+\DIFdelbegin \DIFdel{As illustrated in }%DIFDELCMD < \fref{figure6}%%%
+\DIFdel{, topological features demonstrate results comparable to traditional ones, with some stage boundaries almost precisely matching for all types of features throughout all objects. Furthermore, according to }\DIFdelend \DIFaddbegin \DIFadd{According to }\DIFaddend \tref{table1}, \DIFaddbegin \DIFadd{the filtered }\DIFaddend topological features outperform the traditional ones for all experiments, with the combined feature space achieving an even higher \DIFaddbegin \DIFadd{adapted }\DIFaddend silhouette score for \DIFdelbegin \DIFdel{object }\DIFdelend \DIFaddbegin \DIFadd{subject }\DIFaddend 1, although following slightly behind for \DIFdelbegin \DIFdel{objects }\DIFdelend \DIFaddbegin \DIFadd{subjects }\DIFaddend 2 and 3. \DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{However, the scatter plots in }%DIFDELCMD < \fref{figure6} %%%
+\DIFdel{show noticeably higher density and better separation of the stage\mbox{-}2 boundary candidates when the spectral features are involved. This indicates higher stability of the final results obtained in those cases, except, arguably, for object 2, where the illustrations are insufficient to make conclusive decisions. Nevertheless, in all cases, SDA did not discover any meaningful }\DIFdelend \DIFaddbegin \DIFadd{Notably, for all three subjects, the QSDA improved the quality of the resulting edges, indicating that the technique effectively filtered out noisy, harmful features. Finally, as expected, SDA revealed no significant }\DIFaddend patterns when applied to \DIFdelbegin \DIFdel{shuffled recordings and demonstrated over 10 times lower quality than for }\DIFdelend \DIFaddbegin \DIFadd{the shuffled recordings, demonstrating a quality more than 25 times lower than that of }\DIFaddend the original data\DIFdelbegin \DIFdel{, reinforcing the statistical significance of the results}\DIFdelend \DIFaddbegin \DIFadd{. Nevertheless, adding Gaussian noise had a much smaller effect on the silhouette value, indicating that the pipeline is relatively robust with respect to noise}\DIFaddend .
+
+\DIFdelbegin %DIFDELCMD < \Table{
+%DIFDELCMD <     \label{table1}
+%DIFDELCMD <     Silhouette coefficients of results obtained from original and shuffled recordings of all objects using three sets of features: traditional, topological, and combined.
+%DIFDELCMD < }
+%DIFDELCMD <     %%%
+\DIFdelend \DIFaddbegin \begin{table*}
+    \caption{
+        \label{table1}
+        \DIFaddFL{Adapted silhouette coefficients (that is, the average silhouette score of all pairs of adjacent stages) of results obtained from original, noisy, and shuffled recordings of subjects 1 -- 3 using different sets of features.
+    }}
+    \begin{indented}
+  \centering
+    \item[]\begin{tabular}{@{}lllll}
+    \DIFaddendFL \br
+    EEG recording & Traditional & Topological & \DIFaddbeginFL \DIFaddFL{Topological, QSDA }& \DIFaddendFL Combined\\
+    \mr 
+        \DIFdelbeginFL \DIFdelFL{Object }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Subject }\DIFaddendFL 1 (original)       & 0.198 & \DIFaddbeginFL \DIFaddFL{0.126 }& \DIFaddendFL 0.205 & 0.218 \\
+        \DIFdelbeginFL \DIFdelFL{Object }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Subject }\DIFaddendFL 1 (\DIFaddbeginFL \DIFaddFL{gaussian noise) }& \DIFaddFL{-     }& \DIFaddFL{-     }& \DIFaddFL{0.056 }& \DIFaddFL{-     }\\
+        \DIFaddFL{Subject 1 (}\DIFaddendFL shuffled)       & 0.004 & \DIFdelbeginFL \DIFdelFL{0.008 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{-     }\DIFaddendFL & \DIFdelbeginFL \DIFdelFL{0.005 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{0.009 }& \DIFaddFL{0.006 }\DIFaddendFL \\
+    \bs
+        \DIFdelbeginFL \DIFdelFL{Object }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Subject }\DIFaddendFL 2 (original)       & 0.110 & \DIFaddbeginFL \DIFaddFL{0.051 }& \DIFaddendFL 0.131 & 0.126 \\
+        \DIFdelbeginFL \DIFdelFL{Object }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Subject }\DIFaddendFL 2 (\DIFaddbeginFL \DIFaddFL{gaussian noise) }& \DIFaddFL{-     }& \DIFaddFL{-     }& \DIFaddFL{0.048 }& \DIFaddFL{-     }\\
+        \DIFaddFL{Subject 2 (}\DIFaddendFL shuffled)       & 0.008 & \DIFaddbeginFL \DIFaddFL{-     }& \DIFaddendFL 0.006 & 0.009 \\
+    \bs
+        \DIFdelbeginFL \DIFdelFL{Object }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Subject }\DIFaddendFL 3 (original)       & 0.111 & \DIFaddbeginFL \DIFaddFL{0.105 }& \DIFaddendFL 0.190 & 0.187 \\
+        \DIFdelbeginFL \DIFdelFL{Object }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{Subject }\DIFaddendFL 3 (\DIFaddbeginFL \DIFaddFL{gaussian noise) }& \DIFaddFL{-     }& \DIFaddFL{-     }& \DIFaddFL{0.099 }& \DIFaddFL{-     }\\
+        \DIFaddFL{Subject 3 (}\DIFaddendFL shuffled)       & 0.017 & \DIFaddbeginFL \DIFaddFL{-     }& \DIFaddendFL 0.005 & \DIFdelbeginFL \DIFdelFL{0.004 }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{0.005 }\DIFaddendFL \\
+     \br
+    \DIFdelbeginFL %DIFDELCMD < \endTable
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \end{tabular}
+    \end{indented}
+\end{table*}
+\DIFaddend 
+
+\DIFdelbegin %DIFDELCMD < \begin{figure}
+%DIFDELCMD <     \centering
+%DIFDELCMD <     \includegraphics[width=0.95 \columnwidth]{old_figure6.jpeg}
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Original EEG recordings of objects 1 (a), 2 (b), and 3 (c) with detected stages outlined in different colors and their durations indicated at the bottoms of the diagrams. Top charts display results obtained using traditional features, middle charts --- using topological ones, and bottom charts --- using both approaches together. Vertical black lines are the final state boundaries computed by SDA as the centers of corresponding clusters shown on multicolored scatter plots at the bottom of each chart. The scatter plots represent the joint arrays of state boundary candidates obtained in the second step of SDA, with the dot size reflecting the frequency of occurrence of an epoch in this array and illustrating the stability of the boundary. The black numbers at the top of each chart present the silhouette coefficients for pairs of adjacent stages of each discovered boundary.}}
+    %DIFAUXCMD
+%DIFDELCMD < \label{figure6}
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{Overall, }\DIFdelend \DIFaddbegin \DIFadd{Next, we review the specific results presented in Supplementary Materials B for each subject. Overall, the }\DIFaddend SDA successfully identified well-separated functional stages in all three EEG recordings \DIFdelbegin \DIFdel{with all }\DIFdelend \DIFaddbegin \DIFadd{for all the }\DIFaddend considered feature spaces. Although we did not achieve a complete agreement between the results, one can undoubtedly trace the common patterns confirmed by relatively good values of quality metrics for all \DIFdelbegin \DIFdel{objects.
+}\DIFdelend \DIFaddbegin \DIFadd{subjects.
+}
+
+\DIFadd{Most importantly, topological features demonstrated results comparable to those of traditional features, with some stage boundaries almost precisely matching for all types of features across all subjects. }\DIFaddend Furthermore, the topological approach led to better partitions\DIFdelbegin \DIFdel{according to }\DIFdelend \DIFaddbegin \DIFadd{, as measured by }\DIFaddend the silhouette coefficient\DIFdelbegin \DIFdel{for all monks, although the traditional techniques}\DIFdelend \DIFaddbegin \DIFadd{, for all the monks. Traditional techniques, however, }\DIFaddend usually prevailed in \DIFaddbegin \DIFadd{terms of }\DIFaddend the stability of the answers\DIFdelbegin \DIFdel{. However, when using the novel approach, }\DIFdelend \DIFaddbegin \DIFadd{: the scatter plots show noticeably higher density and better separation of the stage\mbox{-}2 boundary candidates when }\DIFaddend the \DIFaddbegin \DIFadd{spectral features are involved, except, arguably, for subject 2, where the illustrations are insufficient to make conclusive decisions.
+}
+
+\DIFadd{With topological features, the }\DIFaddend algorithm significantly shifted or did not determine the individual boundaries separating similar states with low intercluster distances\DIFdelbegin \DIFdel{, which may indicate both that topological features lose }\DIFdelend \DIFaddbegin \DIFadd{. This may indicate either that topological methods miss }\DIFaddend important patterns present in the original data\DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{, or }\DIFaddend that they reveal additional significant dependencies not recorded by the spectral features. Accounting for the results with the combined feature space, we suggest that the topological features most likely do not duplicate but complement the traditional ones to achieve even better, \DIFaddbegin \DIFadd{more }\DIFaddend stable results. Our experiments show that they may miss some critical patterns but discover other unexplored ones, \DIFdelbegin \DIFdel{which is }\DIFdelend reinforced by the combined features demonstrating comparable or \DIFdelbegin \DIFdel{exceeding }\DIFdelend \DIFaddbegin \DIFadd{better }\DIFaddend quality than other approaches while \DIFdelbegin \DIFdel{having }\DIFdelend \DIFaddbegin \DIFadd{exhibiting }\DIFaddend higher stability. 
+\DIFdelbegin \DIFdel{Finally, the statistical significance of the results is reinforced by the extremely low quality obtained using shuffled recordings}\DIFdelend \DIFaddbegin 
+
+\DIFadd{Finally, despite relatively low silhouette scores, the boundaries detected for noisy recordings mostly coincide with those for the original EEG, except for a few of the least stable ones. This reinforces the robustness of the topological approach}\DIFaddend .
+
+\DIFdelbegin \DIFdel{As shown in }%DIFDELCMD < \fref{figure7}%%%
+\DIFdelend \DIFaddbegin \DIFadd{Considering the feature quality scores presented to the right of each figure in Supplementary Materials B}\DIFaddend , the most \DIFdelbegin \DIFdel{informative }\DIFdelend \DIFaddbegin \DIFadd{practical }\DIFaddend features consistently across \DIFaddbegin \DIFadd{the }\DIFaddend QSDA and information value analysis for all \DIFdelbegin \DIFdel{objects }\DIFdelend \DIFaddbegin \DIFadd{subjects }\DIFaddend were various persistence amplitudes. Interestingly, \DIFdelbegin \DIFdel{unlike IV, QSDA especially preferred the ones }\DIFdelend \DIFaddbegin \DIFadd{QSDA primarily favored those }\DIFaddend based on persistence silhouettes and landscapes\DIFdelbegin \DIFdel{while massively underestimating }\DIFdelend \DIFaddbegin \DIFadd{, while }\DIFaddend those calculated from betti curves \DIFdelbegin \DIFdel{. However, the assessment techniques did not highlight any evident brain regions producing the most valuable features across all three objects. Nonetheless, the scores are generally consistent between }\DIFdelend \DIFaddbegin \DIFadd{received a higher IV.}\@
+
+\DIFadd{Similarly, the QSDA and IV scores were generally consistent among }\DIFaddend the feature selection methods. For \DIFdelbegin \DIFdel{object }\DIFdelend \DIFaddbegin \DIFadd{subject }\DIFaddend 1, both strategies valued recordings obtained from the right \DIFaddbegin \DIFadd{frontal }\DIFaddend and occipital parts of the brain\DIFdelbegin \DIFdel{, for object }\DIFdelend \DIFaddbegin \DIFadd{; for subject }\DIFaddend 2\DIFdelbegin \DIFdel{--- from the prefrontal}\DIFdelend \DIFaddbegin \DIFadd{, from the pre-frontal}\DIFaddend , frontal, and midline areas\DIFdelbegin \DIFdel{, and for object }\DIFdelend \DIFaddbegin \DIFadd{; and for subject }\DIFaddend 3\DIFdelbegin \DIFdel{--- }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend from the temporal and frontal brain regions. Notably, QSDA generally shifted its preference towards the occipital and parietal \DIFdelbegin \DIFdel{parts}\DIFdelend \DIFaddbegin \DIFadd{regions}\DIFaddend , although the principal trends persisted. \DIFaddbegin \DIFadd{However, neither technique revealed evident patterns in the brain regions producing the most valuable features that would be reliably observed for all subjects, indicating that no EEG channel should be excluded from further calculations. }\DIFaddend Regardless, both approaches consistently scored the features resulting from Pearson dissimilarities low.
+\DIFdelbegin \DIFdel{Aggregated by the }\DIFdelend \DIFaddbegin 
+
+\DIFadd{Aggregated by }\DIFaddend topological origin, although the simplices of dimensions 1 and 2 contributed the most, the best features were those describing all dimensions simultaneously, suggesting that higher dimensions do not duplicate but rather complement the patterns detected by simpler features. Interestingly, for \DIFdelbegin \DIFdel{object }\DIFdelend \DIFaddbegin \DIFadd{subject }\DIFaddend 2, \DIFaddbegin \DIFadd{the }\DIFaddend QSDA also favored \DIFdelbegin \DIFdel{the }\DIFdelend simplices of dimension 5\DIFdelbegin \DIFdel{--- the pattern }\DIFdelend \DIFaddbegin \DIFadd{, which was }\DIFaddend not observed in other cases.
+\DIFaddbegin 
+
+\DIFaddend Finally, the most meaningful statistical characteristics\DIFaddbegin \DIFadd{, as suggested by the bar charts in Supplementary Materials B, }\DIFaddend were the vector norms with $p = 1$ and $p = 2$, as well as the sum and mean of the input. The least informative, in turn, were all percentiles (25, 50, and 75), skew, and kurtosis of \DIFdelbegin \DIFdel{the }\DIFdelend variables.
+
+\DIFdelbegin %DIFDELCMD < \begin{figure}
+%DIFDELCMD <     \centering
+%DIFDELCMD <     \includegraphics[width=\columnwidth]{old_figure7.eps}
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{Mean information values (blue) and QSDA scores (red) of all topological features for objects 1 (a), 2 (b), and 3 (c), aggregated by the parameters of their source: extraction technique and brain region (top left), vectorization method (top right), simplex dimension (bottom left), and statistical characteristic (bottom right).}}
+    %DIFAUXCMD
+%DIFDELCMD < \label{figure7}
+%DIFDELCMD < \end{figure}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+%DIF <  This is here to force placement on the same page with the describing text in a two-column layout
+%DIFDELCMD < \begin{figure*}
+%DIFDELCMD <     \centering
+%DIFDELCMD <     \includegraphics[width=\textwidth]{old_figure8.eps}
+%DIFDELCMD <     %%%
+%DIFDELCMD < \caption{%
+{%DIFAUXCMD
+\DIFdelFL{The silhouette scores of the resulting boundaries deduced by SDA using three types of features for the original and shuffled recordings of 30 subjects.}}
+    %DIFAUXCMD
+%DIFDELCMD < \label{figure8}
+%DIFDELCMD < \end{figure*}
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend It is worth noting that the extremely high dimensionality of the topological features \DIFdelbegin \DIFdel{might }\DIFdelend \DIFaddbegin \DIFadd{may }\DIFaddend have introduced some dispersion in the results. However, the proposed selection method (QSDA) demonstrated effectiveness in filtering out significant portions of \DIFdelbegin \DIFdel{noisy featuresand was supported by the }\DIFdelend \DIFaddbegin \DIFadd{harmful features, supported by }\DIFaddend information value analysis. Although one may notice some discrepancies in its behavior compared to IV (for example, giving preference to the data collected closer to the occipital part of the brain and overestimating the quality of some amplitudes), the principal patterns match for both approaches.
+
+\DIFdelbegin \subsection{\DIFdel{Validation with 30 objects}}
+%DIFAUXCMD
+\addtocounter{subsection}{-1}%DIFAUXCMD
+\DIFdelend \DIFaddbegin \subsubsection{\DIFadd{Stage 2: reduced feature set for all 30 subjects}}
+\DIFaddend 
+
+\DIFdelbegin \DIFdel{To reinforce our results, we additionally run the proposed algorithm on the EEG recordings of the Buddhist Tantric Guhyasamaja meditation practice performed by 30 more Tibetan monks. To }\DIFdelend \DIFaddbegin \begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{new_figure6.eps}
+    \caption{\DIFaddFL{The adapted silhouette scores of the resulting boundaries deduced by SDA using three types of features for the original and shuffled recordings of 30 subjects.}}
+    \label{figure6}
+\end{figure*}
+
+\DIFadd{To speed up the subsequent computations and }\DIFaddend enhance the stability of the detected stages\DIFdelbegin \DIFdel{and to speed up the computations, we removed the features that established ineffective for the recordings already analyzed, that is}\DIFdelend \DIFaddbegin \DIFadd{, we remove the consistently least effective features based on previous results}\DIFaddend :
+\begin{itemize}
+    \item 
+        All features computed from Pearson dissimilarities between the components of the EEG;\@
+    \item 
+        \DIFdelbegin \DIFdel{The features resulting from }\DIFdelend \DIFaddbegin \DIFadd{Features resulting from the }\DIFaddend Betti curves and the \DIFdelbegin \DIFdel{numbers }\DIFdelend \DIFaddbegin \DIFadd{number }\DIFaddend of points on the persistence diagrams, including the respective amplitudes;
+    \item 
+        The percentiles, skew, and kurtosis of the variables.
+\end{itemize}
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdel{As a result, we obtained around }\DIFdelend \DIFaddbegin \DIFadd{By doing this, we reduce the topological feature space to approximately }\DIFaddend 4,500 \DIFdelbegin \DIFdel{topological }\DIFdelend features (as opposed to 20,000 previously), from which we \DIFdelbegin \DIFdel{selected }\DIFdelend \DIFaddbegin \DIFadd{select }\DIFaddend the 25\% best ones using QSDA. \DIFdelbegin %DIFDELCMD < \@
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \DIFadd{Moving forward, we repeat all the experiments for 30 subjects and report the results in Supplementary Materials C.
+}\DIFaddend 
+
+\DIFdelbegin \DIFdel{As shown in Figure 8, }\DIFdelend \DIFaddbegin \DIFadd{First, based on the silhouette scores presented in Supplementary Materials C, Table 1, and the aggregated illustration in }\fref{figure6}\DIFadd{, the topological features outperform }\DIFaddend the \DIFdelbegin \DIFdel{topological features outperformed the }\DIFdelend traditional ones for most subjects, \DIFdelbegin \DIFdel{while }\DIFdelend \DIFaddbegin \DIFadd{with }\DIFaddend the combined feature spaces \DIFdelbegin \DIFdel{were prevalent for }\DIFdelend \DIFaddbegin \DIFadd{prevalent in }\DIFaddend a third of the recordings. \DIFdelbegin \DIFdel{Furthermore, the scores on shuffled epochs }\DIFdelend \DIFaddbegin \DIFadd{Similar to previous findings, QSDA improves the results for almost all subjects, reinforcing its effectiveness in feature selection. Furthermore, Gaussian noise generally reduces the score by at most a factor of three, while shuffling the epochs drastically decreases the quality, indicating no good boundaries to be detected. Indeed, the scores in the latter case }\DIFaddend were multiple times lower than \DIFdelbegin \DIFdel{the ones }\DIFdelend \DIFaddbegin \DIFadd{those }\DIFaddend for the original EEG \DIFdelbegin \DIFdel{recordings }\DIFdelend and did not exceed 0.05 for \DIFdelbegin \DIFdel{all subjects. 
+Thus, no evident good patterns have been detected for shuffled epochs, reinforcing the statistical significance of the results.
+}\DIFdelend \DIFaddbegin \DIFadd{most subjects. 
+}\DIFaddend 
+
+\DIFaddbegin \DIFadd{Exploring the detected stage boundaries also confirms our previous conclusions that all feature sets detect similar boundaries, with only the least stable ones noticeably shifted by the topological approach. Interestingly, unlike previously, the clusters derived from topological features appeared quite dense for most subjects, suggesting that the new approach is also not inferior in terms of the stability of the results. Moreover, for a significant portion of the subjects, the combined features produced more compact clusters than all other techniques, confirming that the two feature sets not only support each other but may also detect different meaningful characteristics of the EEG.
+}
+
+\DIFaddend Finally, these experiments \DIFdelbegin \DIFdel{provide sufficient evidence to argue that the most }\DIFdelend \DIFaddbegin \DIFadd{confirm which features are the most valuable for the study. As shown on the right of each figure in Supplementary Materials C, similar to the first three subjects, the most useful features were the amplitudes, especially those based on persistence silhouettes, with the mean and sum being the most practical characteristics to consider. Interestingly, the most }\DIFaddend valuable data for the research generally comes from the electrodes in the frontal area of the brain, \DIFdelbegin \DIFdel{with }\DIFdelend \DIFaddbegin \DIFadd{as confirmed by both the aggregated QSDA and IV scores in }\fref{figure7}\DIFadd{. However, this result is not consistent across all subjects, with some exhibiting opposite tendencies, which requires further research into more specific physiological patterns of individual subjects.
+}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\columnwidth]{new_figure7.eps}
+    \caption{\DIFaddFL{Feature quality scores (QSDA on the left, IV on the right) aggregated by their source electrode averaged over 30 subjects. To account for the distinctions in electrode placement during different expeditions, we merge similar electrodes from different recordings into one point on the diagram. The respective mappings are indicated in the labels of such points using the `/' symbol.}}
+    \label{figure7}
+\end{figure}
+
+\DIFadd{Overall, the results with the full dataset confirm most patterns observed previously using the EEG of subjects 1 - 3. Although some stages have shifted when using topological features compared to the traditional approach, general trends persist, and }\DIFaddend the \DIFdelbegin \DIFdel{sensors Fp1, Fp2, and F7 proving the most applicable information , as strongly supported by both}\DIFdelend \DIFaddbegin \DIFadd{method is confirmed to be robust based on its performance with noisy and shuffled recordings. Furthermore, the proposed feature selection technique demonstrated promising results, noticeably boosting the final quality and being consistent with the information value analysis. Although further research is needed to evaluate the physiological interpretation of the conclusions and to understand the reasons for the observed discrepancies, the results obtained for the meditation data are promising and robust enough to consider the proposed topological framework as an appropriate alternative to traditional spectral features.
+}
+
+\subsection{\DIFadd{Sleep data}}
+
+\DIFadd{To reinforce our results and assess the applicability of the topological approach to other data, we run the proposed algorithm on PSG recordings from the sleep-edf dataset. As mentioned in Section 2.2, we use SDA to search for 10 functional stages and evaluate whether they fit any subset of expert annotations. For simplicity, this section analyzes three sets of features: spectral features similar to those in \mbox{%DIFAUXCMD
+\cite{SDA}}\hskip0pt%DIFAUXCMD
+, topological features as described in Section 6.1.2, and a combination of both. Moreover, as the data contains only seven data channels, we omit the feature selection with QSDA to speed up the computations. All the hyperparameters of the algorithm were left unchanged.
+}
+
+\DIFadd{To assess the results, we focus on two primary quality metrics: the previously used adapted silhouette coefficient and }\DIFaddend the \DIFdelbegin \DIFdel{aggregated QSDA (}%DIFDELCMD < \fref{figure9}%%%
+\DIFdel{, left) and IV (}%DIFDELCMD < \fref{figure9}%%%
+\DIFdel{, right)quality scores}\DIFdelend \DIFaddbegin \DIFadd{Fowlkes-Mallows index (FMI)~\mbox{%DIFAUXCMD
+\cite{Fowlkes01091983}}\hskip0pt%DIFAUXCMD
+. The latter is a typical external criterion used to measure the degree of similarity between two clusterings. For a predicted set of stage boundaries $A = (a_1, a_2, \dots, a_n)$ and an expert annotation $E = (e_1, e_2, \dots, e_m)$, we first select a subset $F = (f_1, f_2, \dots, f_n) \subset E$ of boundaries with the lowest sum of pairwise distances to A, as denoted by equation }\eref{eq4}\DIFaddend .
+\DIFaddbegin \begin{equation}
+    \DIFadd{\sum_{i = 1}^{n} |a_i - f_i| \rightarrow \min \label{eq4}
+}\end{equation}
+\DIFadd{Then, for each pair of epochs, we determine whether their `true' cluster distribution matches the predicted one, and compute the FMI according to equation }\eref{eq5}\DIFadd{.
+}\begin{equation}
+    \DIFadd{FMI = \sqrt{\frac{TP}{TP + FP} \cdot \frac{TP}{TP + FN}} \label{eq5}
+}\end{equation}
+\DIFadd{with:
+}\begin{itemize}
+    \item
+        \DIFadd{$TP$ the number of pairs of epochs assigned to the same cluster in both distributions;
+    }\item
+        \DIFadd{$FP$ the number of pairs of epochs assigned to the same cluster in the `true' distribution, but to different clusters in the predicted one;
+    }\item
+        \DIFadd{$FN$ the number of pairs of epochs assigned to the same cluster in the predicted distribution, but to different clusters in the `true' one.
+}\end{itemize}
+\DIFaddend 
+
+\DIFaddbegin \DIFadd{Interestingly, based on the results shown in }\tref{table2}\DIFadd{, the topological approach is noticeably superior to the traditional features for this data in both the silhouette coefficient and the Fowlkes-Mallows index. Moreover, a similar or even slightly worse quality obtained with the combined feature space suggests that for these data, the topological approach supersedes the traditional features, revealing not only new patterns but also supporting the already known ones.
+}
+
+\Table{
+    \label{table2}
+    Mean quality metrics and their 95\% confidence intervals of results for sleep data of 153 subjects obtained using three sets of features.
+}
+    \br
+    \DIFadd{Feature set }& \DIFadd{Adapted silhouette }& \DIFadd{Fowlkes-Mallows index }\\
+    \mr
+    \DIFadd{Traditional }& \DIFadd{$0.03 \pm 0.009$  }& \DIFadd{$0.843 \pm 0.017$ }\\
+    \DIFadd{Topological }& \DIFadd{$0.228 \pm 0.01 $ }& \DIFadd{$0.911 \pm 0.013$ }\\
+    \DIFadd{Combined }&  \DIFadd{$0.227 \pm 0.01 $ }& \DIFadd{$0.907 \pm 0.014$ }\\
+    \br
+\endTable
+
+\DIFadd{Next, we present the comprehensive results separately for each subject in Supplementary Materials D. The figures suggest that all feature sets generally detect similar stages. Notably, the final boundaries typically fall within tight groups of expert labels, indicating that the algorithm effectively finds high-level clusterings, and the limitation of 10 searched stages does not impact the interpretability of the results. Moreover, as suggested by the densities of the scatter plots, topological features produce significantly more robust results, which at the same time better correspond to target labelings. The quality score diagrams at the beginning of Supplementary Materials D also support the findings that traditional features consistently perform worse than the topological approach in terms of both stability and agreement with target answers for almost all subjects.
+}
+
+\DIFadd{Overall, the results for sleep-edf reflect previous findings from the meditation data but strongly suggest the superiority of the topological approach. Despite the constraint of searching for only ten stages, our experiments show that with topological features, SDA consistently produces more robust boundaries that better match the target distribution, even without feature selection techniques, including QSDA.}\@
+
+\subsection{\DIFadd{A note on computational complexity}}
+
+\DIFadd{Considering the large size of the topological feature space, it is essential to assess whether the gains in the quality of the final answer justify the computational expenses of generating almost 20000 features. Since estimating the theoretical algorithmic complexity for such an elaborate pipeline is infeasible, we resort to an empirical analysis of the methods' running times using samples from both datasets ranging from 50 to 500 epochs. For the experiments, we used a 16-core Intel Core i5-12600K CPU with 32GB of RAM powered by Windows. Each metric was calculated as the average of 25 measurements. The size of the 95\% confidence intervals for each entry did not exceed 1\% of their absolute value, so they are not presented further.
+}
+
+\DIFadd{As shown in }\fref{figure8}\DIFadd{, calculating the topological features is indeed more expensive than the traditional ones for both datasets. However, the difference is not as significant as one might expect, and the topological approach may have high potential for optimization in the future, given the novelty of TDA and the numerous ongoing research projects published nowadays. Therefore, the suggested framework is a practical alternative to traditional spectral features, showing similar and, arguably, even better results with reasonable losses in computational efficiency.
+}
+
+\DIFaddend \begin{figure}
+    \centering
+    \DIFdelbeginFL %DIFDELCMD < \includegraphics[width=\columnwidth]{old_figure9.eps}
+%DIFDELCMD <     %%%
+\DIFdelendFL \DIFaddbeginFL \includegraphics[width=\columnwidth]{new_figure8.eps}
+    \DIFaddendFL \caption{\DIFdelbeginFL \DIFdelFL{Feature quality scores (QSDA on the left}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{The running time of calculating traditional and topological features for two types of data}\DIFaddendFL , \DIFdelbeginFL \DIFdelFL{IV }\DIFdelendFL \DIFaddbeginFL \DIFaddFL{depending }\DIFaddendFL on the \DIFdelbeginFL \DIFdelFL{right) aggregated by their source electrode averaged over 30 subjects}\DIFdelendFL \DIFaddbeginFL \DIFaddFL{number of epochs}\DIFaddendFL .}
+    \DIFdelbeginFL %DIFDELCMD < \label{figure9}
+%DIFDELCMD < %%%
+\DIFdelendFL \DIFaddbeginFL \label{figure8}
+\DIFaddendFL \end{figure}
+
+
+\section{Conslusions and discussion}
+
+In this study, we \DIFdelbegin \DIFdel{combined various topological methods and proposed an algorithm to construct a comprehensive feature description of the time series, which proved effective in finding the }\DIFdelend \DIFaddbegin \DIFadd{explored a novel technique based on topological data analysis to construct comprehensive feature descriptions of time series. The algorithm proved to be an effective feature engineering approach for SDA, a recently introduced automated method for finding }\DIFaddend functional stages in \DIFdelbegin \DIFdel{the }\DIFdelend \DIFaddbegin \DIFadd{a time series. As demonstrated by our experiments with 30 }\DIFaddend EEG recordings of the Guhyasamaja \DIFdelbegin \DIFdel{meditation practice performed by 30 Buddhist monks. As demonstrated by the experiment, with proper feature engineering, the SDA --- a novel automated approach to solving the task --- can find boundaries similar to the ones obtained previously using solely the traditional features. }\DIFdelend \DIFaddbegin \DIFadd{Tantra meditation practice and 153 PSG recordings of human sleep, using topological features, SDA detects boundaries similar to, and sometimes even superior in quality to, those obtained previously using solely spectral features. Most importantly, SDA produced particularly promising results for the sleep-edf dataset, where the boundaries detected based on topological features appeared noticeably more consistent with expert annotations for most subjects. Moreover, adding Gaussian noise to the original data did not fundamentally change the final results, and reduced the silhouette score by only a few times. However, When applied to shuffled epochs, SDA produced no reasonable stage boundaries with several times lower quality metrics compared to the original EEG for all analyzed objects. Thus, we consider the obtained results reliable and suggest that the topological approach is a trustworthy alternative to traditional methods, which produces good features and does not hinder the stability of the SDA.}\@
+
+\DIFaddend However, in some cases, the technique \DIFdelbegin \DIFdel{preferred }\DIFdelend \DIFaddbegin \DIFadd{favored }\DIFaddend less similar results, \DIFdelbegin \DIFdel{which indicates }\DIFdelend \DIFaddbegin \DIFadd{indicating }\DIFaddend both the loss of important information in the \DIFdelbegin \DIFdel{process of topological analysis }\DIFdelend \DIFaddbegin \DIFadd{topological features }\DIFaddend and the discovery of new patterns previously not identified by existing solutions. \DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend Based on our research \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{on }\DIFaddend the separate and combined behavior of \DIFdelbegin \DIFdel{the }\DIFdelend traditional and topological features, we suggest that neither approach extracts a complete description of \DIFdelbegin \DIFdel{the EEG .}%DIFDELCMD < \@ %%%
+\DIFdelend \DIFaddbegin \DIFadd{EEG in the general case. }\DIFaddend Although there are \DIFdelbegin \DIFdel{certain intersections, the }\DIFdelend \DIFaddbegin \DIFadd{substantial intersections, }\DIFaddend topological and spectral characteristics \DIFdelbegin \DIFdel{mostly describe distinct dependencies }\DIFdelend \DIFaddbegin \DIFadd{typically focus on distinct patterns }\DIFaddend in the data, complementing each other \DIFdelbegin \DIFdel{, emphasizing the known patterns , and discovering }\DIFdelend \DIFaddbegin \DIFadd{to highlight known patterns and reveal }\DIFaddend new ones. Thus, there is no silver bullet to \DIFdelbegin \DIFdel{solving }\DIFdelend \DIFaddbegin \DIFadd{solve }\DIFaddend the task, but one should combine the approaches to achieve a \DIFdelbegin \DIFdel{stable }\DIFdelend \DIFaddbegin \DIFadd{robust }\DIFaddend result that reflects the actual behavior of the studied process.
+
+\DIFdelbegin \DIFdel{Additionally, SDA detected no significant stage boundaries when applied to the shuffled epochs, demonstrating several times lower quality metrics compared to the original EEG for all analyzed objects. Thus, we consider the obtained results reliable and suggest that the topological approach produces good features that do not hinder the stability of SDA.}%DIFDELCMD < \@
+%DIFDELCMD < 
+
+%DIFDELCMD < %%%
+\DIFdelend Finally, we introduced \DIFdelbegin \DIFdel{a novel, }\DIFdelend \DIFaddbegin \DIFadd{QSDA, a new }\DIFaddend SDA-based feature selection framework that \DIFdelbegin \DIFdel{proved effective in removing the noisy}\DIFdelend \DIFaddbegin \DIFadd{accounts for the specifics of the final task and scales well with large feature sets. As confirmed by our experiments using meditation data, QSDA is an effective technique for removing noisy, degenerate }\DIFaddend features that are detrimental to good clusterization of the EEG. \DIFdelbegin %DIFDELCMD < \@ %%%
+\DIFdelend The algorithm's scores primarily correlate with the information values of the features, which \DIFdelbegin \DIFdel{confirms }\DIFdelend \DIFaddbegin \DIFadd{reinforces }\DIFaddend its results and \DIFdelbegin \DIFdel{reinforces }\DIFdelend \DIFaddbegin \DIFadd{supports }\DIFaddend the rationality of using the alleged best features to solve the problem at hand. \DIFaddbegin \DIFadd{Furthermore, using the QSDA, we successfully identified that the most valuable features for clustering Guhyasamaja Tantra meditation data generally come from sensors in the frontal areas of the brain. Although we do not currently have an explanation for this phenomenon, it may be an interesting observation worthy of consideration by physiological experts.
+}\DIFaddend 
+
+Future studies should test the proposed approach with other data sets to \DIFaddbegin \DIFadd{collect more examples, }\DIFaddend generalize the technique\DIFaddbegin \DIFadd{, }\DIFaddend and identify common patterns. We expect especially intriguing results when applied to well-studied data with \DIFaddbegin \DIFadd{a }\DIFaddend known correct placement of functional state boundaries. Moreover, we \DIFdelbegin \DIFdel{expect }\DIFdelend \DIFaddbegin \DIFadd{anticipate }\DIFaddend significant outcomes from studies \DIFdelbegin \DIFdel{aiming to interpret }\DIFdelend \DIFaddbegin \DIFadd{aimed at interpreting }\DIFaddend the patterns recorded by topological features accounting for the structure and \DIFdelbegin \DIFdel{patterns }\DIFdelend \DIFaddbegin \DIFadd{relations }\DIFaddend authentically observed in the original data \DIFaddbegin \DIFadd{from a physiological perspective}\DIFaddend .
+
+\section*{Data availability statement}
+
+The raw data will be made available by the authors upon request, without undue reservation.
+
+\section*{Declaration of conflicting interest}
+
+The author(s) \DIFdelbegin \DIFdel{declared }\DIFdelend \DIFaddbegin \DIFadd{declare }\DIFaddend no potential conflicts of interest with respect to the research, authorship, and/or publication of this article.
+
+\section*{References}
+
+\DIFdelbegin %DIFDELCMD < \bibliography{old_references}{}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \bibliography{new_references}{}
+\DIFaddend \bibliographystyle{iopart-num}
+
+\end{document}

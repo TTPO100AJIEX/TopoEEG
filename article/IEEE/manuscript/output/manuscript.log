@@ -1,0 +1,550 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.2.15)  29 APR 2025 22:00
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/TTPO100AJIEX/Desktop/IEEE/manuscript/manuscript.tex
+(c:/Users/TTPO100AJIEX/Desktop/IEEE/manuscript/manuscript.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen141
+\@IEEEtrantmpdimenB=\dimen142
+\@IEEEtrantmpdimenC=\dimen143
+\@IEEEtrantmpcountA=\count196
+\@IEEEtrantmpcountB=\count197
+\@IEEEtrantmpcountC=\count198
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(D:\Programs\Other\MikTex\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen144
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen145
+\CLASSINFOnormalsizeunitybaselineskip=\dimen146
+\IEEEnormaljot=\dimen147
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <18> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1086.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <18> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1086.
+\IEEEquantizedlength=\dimen148
+\IEEEquantizedlengthdiff=\dimen149
+\IEEEquantizedtextheightdiff=\dimen150
+\IEEEilabelindentA=\dimen151
+\IEEEilabelindentB=\dimen152
+\IEEEilabelindent=\dimen153
+\IEEEelabelindent=\dimen154
+\IEEEdlabelindent=\dimen155
+\IEEElabelindent=\dimen156
+\IEEEiednormlabelsep=\dimen157
+\IEEEiedmathlabelsep=\dimen158
+\IEEEiedtopsep=\skip49
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@IEEEsubequation=\count269
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count270
+\c@table=\count271
+\@IEEEeqnnumcols=\count272
+\@IEEEeqncolcnt=\count273
+\@IEEEsubeqnnumrollback=\count274
+\@IEEEquantizeheightA=\dimen159
+\@IEEEquantizeheightB=\dimen160
+\@IEEEquantizeheightC=\dimen161
+\@IEEEquantizeprevdepth=\dimen162
+\@IEEEquantizemultiple=\count275
+\@IEEEquantizeboxA=\box52
+\@IEEEtmpitemindent=\dimen163
+\IEEEPARstartletwidth=\dimen164
+\c@IEEEbiography=\count276
+\@IEEEtranrubishbin=\box53
+) (D:\Programs\Other\MikTex\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(D:\Programs\Other\MikTex\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (D:\Programs\Other\MikTex\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen165
+)) (D:\Programs\Other\MikTex\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen166
+) (D:\Programs\Other\MikTex\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count277
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count278
+\leftroot@=\count279
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count280
+\DOTSCASE@=\count281
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen167
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count282
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count283
+\dotsspace@=\muskip17
+\c@parentequation=\count284
+\dspbrk@lvl=\count285
+\tag@help=\toks19
+\row@=\count286
+\column@=\count287
+\maxfields@=\count288
+\andhelp@=\toks20
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (D:\Programs\Other\MikTex\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (D:\Programs\Other\MikTex\tex/latex/algorithms\algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+ (D:\Programs\Other\MikTex\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (D:\Programs\Other\MikTex\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+\c@ALC@unique=\count289
+\c@ALC@line=\count290
+\c@ALC@rem=\count291
+\c@ALC@depth=\count292
+\ALC@tlm=\skip55
+\algorithmicindent=\skip56
+) (D:\Programs\Other\MikTex\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (D:\Programs\Other\MikTex\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count293
+\float@exts=\toks24
+\float@box=\box56
+\@float@everytoks=\toks25
+\@floatcapt=\box57
+)
+\@float@every@algorithm=\toks26
+\c@algorithm=\count294
+) (D:\Programs\Other\MikTex\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen174
+\ar@mcellbox=\box58
+\extrarowheight=\dimen175
+\NC@list=\toks27
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box59
+) (D:\Programs\Other\MikTex\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (D:\Programs\Other\MikTex\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen176
+\captionmargin=\dimen177
+\caption@leftmargin=\dimen178
+\caption@rightmargin=\dimen179
+\caption@width=\dimen180
+\caption@indent=\dimen181
+\caption@parindent=\dimen182
+\caption@hangindent=\dimen183
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1175.
+)
+\c@KVtest=\count295
+\sf@farskip=\skip59
+\sf@captopadj=\dimen184
+\sf@capskip=\skip60
+\sf@nearskip=\skip61
+\c@subfigure=\count296
+\c@subfigure@save=\count297
+\c@lofdepth=\count298
+\c@subtable=\count299
+\c@subtable@save=\count300
+\c@lotdepth=\count301
+\sf@top=\skip62
+\sf@bottom=\skip63
+) (D:\Programs\Other\MikTex\tex/latex/base\textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+) (D:\Programs\Other\MikTex\tex/latex/sttools\stfloats.sty
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip settings
+\@dblbotnum=\count302
+\c@dblbotnumber=\count303
+) (D:\Programs\Other\MikTex\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (D:\Programs\Other\MikTex\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks28
+\verbatim@line=\toks29
+\verbatim@in@stream=\read2
+) (D:\Programs\Other\MikTex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (D:\Programs\Other\MikTex\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (D:\Programs\Other\MikTex\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (D:\Programs\Other\MikTex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (D:\Programs\Other\MikTex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen185
+\Gin@req@width=\dimen186
+) (D:\Programs\Other\MikTex\tex/latex/cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (D:\Programs\Other\MikTex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count304
+\l__pdf_internal_box=\box60
+)
+
+LaTeX Warning: Unused global option(s):
+    [lettersize].
+
+(c:\Users\TTPO100AJIEX\Desktop\IEEE\manuscript\output\manuscript.aux)
+\openout1 = `manuscript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+-- Lines per column: 58 (exact).
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+(D:\Programs\Other\MikTex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count305
+\scratchdimen=\dimen187
+\scratchbox=\box61
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen188
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks31
+) (D:\Programs\Other\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (D:\Programs\Other\MikTex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[][][]\OT1/ptm/m/n/8 Aleksandr Abramov (e-mail: asabramov@edu.hse.ru), Eka-te-rina
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 31--31
+\OT1/ptm/m/n/8 Mikhaylets, and Fe-dor Rat-nikov are with the Fac-ulty of Com-puter
+ []
+
+
+
+
+
+[1{C:/Users/TTPO100AJIEX/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/Programs/Other/MikTex/fonts/enc/dvips/base/8r.enc}
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+ (D:\Programs\Other\MikTex\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+ (D:\Programs\Other\MikTex\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package epstopdf Info: Source file: <figure1.eps>
+(epstopdf)                    date: 2025-02-16 14:21:33
+(epstopdf)                    size: 187853 bytes
+(epstopdf)             Output file: <figure1-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 21:59:54
+(epstopdf)                    size: 55207 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure1-eps-converted-to.pdf figure1.eps>
+(epstopdf)             \includegraphics on input line 82.
+Package epstopdf Info: Output file is already uptodate.
+<figure1-eps-converted-to.pdf, id=8, 396.48125pt x 397.485pt>
+File: figure1-eps-converted-to.pdf Graphic file (type pdf)
+<use figure1-eps-converted-to.pdf>
+Package pdftex.def Info: figure1-eps-converted-to.pdf  used on input line 82.
+(pdftex.def)             Requested size: 166.32092pt x 166.7424pt.
+
+
+[2 <./figure1-eps-converted-to.pdf>]
+
+Package epstopdf Info: Source file: <figure2.eps>
+(epstopdf)                    date: 2025-02-17 21:28:58
+(epstopdf)                    size: 385517 bytes
+(epstopdf)             Output file: <figure2-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 21:59:55
+(epstopdf)                    size: 346875 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure2-eps-converted-to.pdf figure2.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+<figure2-eps-converted-to.pdf, id=17, 876.27374pt x 287.0725pt>
+File: figure2-eps-converted-to.pdf Graphic file (type pdf)
+<use figure2-eps-converted-to.pdf>
+Package pdftex.def Info: figure2-eps-converted-to.pdf  used on input line 123.
+(pdftex.def)             Requested size: 252.0pt x 82.5568pt.
+
+Underfull \vbox (badness 1565) has occurred while \output is active []
+
+
+
+[3 <./figure2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figure3.eps>
+(epstopdf)                    date: 2025-02-16 14:27:03
+(epstopdf)                    size: 5526149 bytes
+(epstopdf)             Output file: <figure3-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 21:59:58
+(epstopdf)                    size: 4409855 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure3-eps-converted-to.pdf figure3.eps>
+(epstopdf)             \includegraphics on input line 151.
+Package epstopdf Info: Output file is already uptodate.
+<figure3-eps-converted-to.pdf, id=30, 1204.5pt x 1514.65875pt>
+File: figure3-eps-converted-to.pdf Graphic file (type pdf)
+<use figure3-eps-converted-to.pdf>
+Package pdftex.def Info: figure3-eps-converted-to.pdf  used on input line 151.
+(pdftex.def)             Requested size: 252.0pt x 316.88591pt.
+
+
+Package epstopdf Info: Source file: <figure4.eps>
+(epstopdf)                    date: 2025-02-17 23:04:59
+(epstopdf)                    size: 1381572 bytes
+(epstopdf)             Output file: <figure4-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 21:59:59
+(epstopdf)                    size: 1362126 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure4-eps-converted-to.pdf figure4.eps>
+(epstopdf)             \includegraphics on input line 162.
+Package epstopdf Info: Output file is already uptodate.
+<figure4-eps-converted-to.pdf, id=31, 1792.6975pt x 1487.5575pt>
+File: figure4-eps-converted-to.pdf Graphic file (type pdf)
+<use figure4-eps-converted-to.pdf>
+Package pdftex.def Info: figure4-eps-converted-to.pdf  used on input line 162.
+(pdftex.def)             Requested size: 252.0pt x 209.09647pt.
+
+
+[4 <./figure3-eps-converted-to.pdf>]
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 220--221
+\OT1/ptm/m/n/10 with val-ues from the set $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 X[]; X[]; [] ; X[]\OMS/cmsy/m/n/10 g$ \OT1/ptm/m/n/10 and $\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 =
+ []
+
+
+
+[5 <./figure4-eps-converted-to.pdf>]
+
+Package epstopdf Info: Source file: <figure5.eps>
+(epstopdf)                    date: 2025-02-17 22:59:05
+(epstopdf)                    size: 879274 bytes
+(epstopdf)             Output file: <figure5-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 22:00:01
+(epstopdf)                    size: 822549 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure5-eps-converted-to.pdf figure5.eps>
+(epstopdf)             \includegraphics on input line 251.
+Package epstopdf Info: Output file is already uptodate.
+<figure5-eps-converted-to.pdf, id=159, 1186.4325pt x 686.565pt>
+File: figure5-eps-converted-to.pdf Graphic file (type pdf)
+<use figure5-eps-converted-to.pdf>
+Package pdftex.def Info: figure5-eps-converted-to.pdf  used on input line 251.
+(pdftex.def)             Requested size: 252.0pt x 145.82765pt.
+<figure6.jpeg, id=160, 1527.7075pt x 3513.125pt>
+File: figure6.jpeg Graphic file (type jpg)
+<use figure6.jpeg>
+Package pdftex.def Info: figure6.jpeg  used on input line 285.
+(pdftex.def)             Requested size: 239.39923pt x 550.47902pt.
+
+
+[6 <./figure5-eps-converted-to.pdf>]
+
+LaTeX Warning: Text page 7 contains only floats.
+
+
+Overfull \vbox (2.6111pt too high) has occurred while \output is active []
+
+
+
+Package epstopdf Info: Source file: <figure7.eps>
+(epstopdf)                    date: 2025-02-19 23:51:43
+(epstopdf)                    size: 3500072 bytes
+(epstopdf)             Output file: <figure7-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 22:00:06
+(epstopdf)                    size: 1462139 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure7-eps-converted-to.pdf figure7.eps>
+(epstopdf)             \includegraphics on input line 297.
+Package epstopdf Info: Output file is already uptodate.
+<figure7-eps-converted-to.pdf, id=167, 2012.51875pt x 4406.4625pt>
+File: figure7-eps-converted-to.pdf Graphic file (type pdf)
+<use figure7-eps-converted-to.pdf>
+Package pdftex.def Info: figure7-eps-converted-to.pdf  used on input line 297.
+(pdftex.def)             Requested size: 252.0pt x 551.74779pt.
+
+
+[7 <./figure6.jpeg>]
+Underfull \vbox (badness 1824) has occurred while \output is active []
+
+
+
+Package epstopdf Info: Source file: <figure8.eps>
+(epstopdf)                    date: 2025-02-20 00:22:49
+(epstopdf)                    size: 247989 bytes
+(epstopdf)             Output file: <figure8-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 22:00:07
+(epstopdf)                    size: 224473 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure8-eps-converted-to.pdf figure8.eps>
+(epstopdf)             \includegraphics on input line 324.
+Package epstopdf Info: Output file is already uptodate.
+<figure8-eps-converted-to.pdf, id=172, 1152.305pt x 273.02pt>
+File: figure8-eps-converted-to.pdf Graphic file (type pdf)
+<use figure8-eps-converted-to.pdf>
+Package pdftex.def Info: figure8-eps-converted-to.pdf  used on input line 324.
+(pdftex.def)             Requested size: 516.0pt x 122.26213pt.
+Package epstopdf Info: Source file: <figure9.eps>
+(epstopdf)                    date: 2025-02-20 00:36:32
+(epstopdf)                    size: 4127417 bytes
+(epstopdf)             Output file: <figure9-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-04-29 22:00:09
+(epstopdf)                    size: 849883 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=figure9-eps-converted-to.pdf figure9.eps>
+(epstopdf)             \includegraphics on input line 335.
+Package epstopdf Info: Output file is already uptodate.
+<figure9-eps-converted-to.pdf, id=173, 814.04124pt x 397.485pt>
+File: figure9-eps-converted-to.pdf Graphic file (type pdf)
+<use figure9-eps-converted-to.pdf>
+Package pdftex.def Info: figure9-eps-converted-to.pdf  used on input line 335.
+(pdftex.def)             Requested size: 252.0pt x 123.04924pt.
+
+
+[8 <./figure7-eps-converted-to.pdf>]
+
+(c:\Users\TTPO100AJIEX\Desktop\IEEE\manuscript\output\manuscript.bbl
+
+[9 <./figure8-eps-converted-to.pdf> <./figure9-eps-converted-to.pdf>]
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `eng'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `eng'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `fre'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `fre'. Using the pattern for
+** the default language instead.
+** WARNING: IEEEtran.bst: No hyphenation pattern has been
+** loaded for the language `en'. Using the pattern for
+** the default language instead.
+)
+
+
+
+[10
+
+] (c:\Users\TTPO100AJIEX\Desktop\IEEE\manuscript\output\manuscript.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4754 strings out of 473530
+ 82838 string characters out of 5724393
+ 490837 words of memory out of 5000000
+ 27920 multiletter control sequences out of 15000+600000
+ 594872 words of font info for 103 fonts, out of 8000000 for 9000
+ 1145 hyphenation exceptions out of 8191
+ 57i,9n,65p,1842b,359s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programs/Other/MikTex/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Programs/Other/MikTex/fonts/type1/urw/times/utmb8a.pfb><D:/Programs/Other/MikTex/fonts/type1/urw/times/utmbi8a.pfb><D:/Programs/Other/MikTex/fonts/type1/urw/times/utmr8a.pfb><D:/Programs/Other/MikTex/fonts/type1/urw/times/utmri8a.pfb>
+Output written on c:\Users\TTPO100AJIEX\Desktop\IEEE\manuscript\output\manuscript.pdf (10 pages, 13430924 bytes).
+PDF statistics:
+ 251 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

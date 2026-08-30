@@ -1,0 +1,117 @@
+\relax 
+\newlabel{FirstPage}{{}{1}{}{}{}}
+\@writefile{toc}{\contentsline {section}{Acknowledgments}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Statements and Declarations}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Ethical considerations}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Consent to participate}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Consent for publication}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Declaration of conflicting interest}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Funding statement}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Data availability statement}{1}{}\protected@file@percent }
+\citation{SDA}
+\citation{chazal2024topologicalanalysisdetectinganomalies}
+\citation{rai2024identifyingextremeeventsstock}
+\citation{heo2024persistenthomologyfeaturedtime}
+\citation{chrétien2024timetopologicalanalysiseeg}
+\citation{dimontesano2024dynamicallymaintainingpersistenthomology}
+\citation{ost2024bananatreespersistencetime}
+\citation{cai2024topologicalfeaturesearchmethod}
+\citation{deng2024twostagehierarchicalexplainablefeature}
+\@writefile{toc}{\contentsline {section}{Abstract}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Introduction}{2}{}\protected@file@percent }
+\citation{SDA}
+\citation{MNE}
+\citation{SDA}
+\@writefile{toc}{\contentsline {section}{Dataset}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Data collection}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Data preprocessing}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Location of electrodes during the experiment and their division into groups.}}{3}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{figure1}{{1}{3}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{State-Detecting algorithm}{3}{}\protected@file@percent }
+\citation{10.1007/BFb0091924,perea2013slidingwindowspersistenceapplication}
+\citation{PhysRevA.45.3403}
+\citation{PhysRevA.33.1134}
+\citation{Borsuk1948}
+\citation{Cech1932}
+\citation{Vietoris1927}
+\citation{ZOMORODIAN2010263,rieser2024newconstructionvietorisripscomplex,Bauer_2021}
+\newlabel{eq1}{{1}{4}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{Topological data analysis}{4}{}\protected@file@percent }
+\citation{Zomorodian2005}
+\citation{10.1007/978-3-319-29228-1_11}
+\citation{bubenik2015statisticaltopologicaldataanalysis}
+\citation{chazal2013stochasticconvergencepersistencelandscapes}
+\citation{kerber2016geometryhelpscomparepersistence}
+\citation{10.1145/62212.62253}
+\citation{Efrat2001}
+\citation{Eckart_Young_1936}
+\citation{Autoencoder}
+\citation{mcinnes2020umapuniformmanifoldapproximation}
+\citation{trofimov2023learningtopologypreservingdatarepresentations}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A synthetic point cloud with its \v {C}ech and Vietoris--Rips complexes for some values of the filtration parameter.}}{5}{}\protected@file@percent }
+\newlabel{figure2}{{2}{5}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{Feature engineering}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{Extracting features from persistence diagrams}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The scheme of the algorithm for extracting the topological features from the EEG.\spacefactor \@m {}}}{6}{}\protected@file@percent }
+\newlabel{figure3}{{3}{6}{}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The scheme of the pipeline to vectorize the persistence diagrams.}}{6}{}\protected@file@percent }
+\newlabel{figure4}{{4}{6}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{Feature selection}{6}{}\protected@file@percent }
+\citation{InformationValue}
+\citation{SDA}
+\@writefile{toc}{\contentsline {subsection}{Information value analysis}{7}{}\protected@file@percent }
+\newlabel{eq2}{{2}{7}{}{enumi.5}{}}
+\newlabel{eq3}{{3}{7}{}{enumi.5}{}}
+\@writefile{toc}{\contentsline {section}{Results}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  Explained variance (top) and achieved resulting quality (bottom) of four dimensionality reduction algorithms for objects 1 (left), 2 (middle), and 3 (right). }}{8}{}\protected@file@percent }
+\newlabel{figure5}{{5}{8}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{Objects~1~\mbox  {--}~3}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Silhouette coefficients of results obtained from original and shuffled recordings of all objects using three sets of features: traditional, topological, and combined.}}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces  Original EEG recordings of objects 1 (a), 2 (b), and 3 (c) with detected stages outlined in different colors and their durations indicated at the bottoms of the diagrams. Top charts display results obtained using traditional features, middle charts --- using topological ones, and bottom charts --- using both approaches together. Vertical black lines are the final state boundaries computed by SDA as the centers of corresponding clusters shown on multicolored scatter plots at the bottom of each chart. The scatter plots represent the joint arrays of state boundary candidates obtained in the second step of SDA, with the dot size reflecting the frequency of occurrence of an epoch in this array and illustrating the stability of the boundary. The black numbers at the top of each chart present the silhouette coefficients for pairs of adjacent stages of each discovered boundary. }}{9}{}\protected@file@percent }
+\newlabel{figure6}{{6}{9}{}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{Validation with 30 objects}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  Mean information values (blue) and QSDA scores (red) of all topological features for objects 1 (a), 2 (b), and 3 (c), aggregated by the parameters of their source: extraction technique and brain region (top left), vectorization method (top right), simplex dimension (bottom left), and statistical characteristic (bottom right). }}{10}{}\protected@file@percent }
+\newlabel{figure7}{{7}{10}{}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{Conslusions and discussion}{10}{}\protected@file@percent }
+\bibstyle{SageV}
+\bibdata{references.bib}
+\bibcite{SDA}{{1}{}{{}}{{}}}
+\bibcite{chazal2024topologicalanalysisdetectinganomalies}{{2}{}{{}}{{}}}
+\bibcite{rai2024identifyingextremeeventsstock}{{3}{}{{}}{{}}}
+\bibcite{heo2024persistenthomologyfeaturedtime}{{4}{}{{}}{{}}}
+\bibcite{chrétien2024timetopologicalanalysiseeg}{{5}{}{{}}{{}}}
+\bibcite{dimontesano2024dynamicallymaintainingpersistenthomology}{{6}{}{{}}{{}}}
+\bibcite{ost2024bananatreespersistencetime}{{7}{}{{}}{{}}}
+\bibcite{cai2024topologicalfeaturesearchmethod}{{8}{}{{}}{{}}}
+\bibcite{deng2024twostagehierarchicalexplainablefeature}{{9}{}{{}}{{}}}
+\bibcite{MNE}{{10}{}{{}}{{}}}
+\bibcite{10.1007/BFb0091924}{{11}{}{{}}{{}}}
+\bibcite{perea2013slidingwindowspersistenceapplication}{{12}{}{{}}{{}}}
+\bibcite{PhysRevA.45.3403}{{13}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces  The silhouette scores of the resulting boundaries deduced by SDA using three types of features for the original and shuffled recordings of 30 subjects. }}{11}{}\protected@file@percent }
+\newlabel{figure8}{{8}{11}{}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  Feature quality scores (QSDA on the left, IV on the right) aggregated by their source electrode averaged over 30 subjects. }}{11}{}\protected@file@percent }
+\newlabel{figure9}{{9}{11}{}{figure.9}{}}
+\bibcite{PhysRevA.33.1134}{{14}{}{{}}{{}}}
+\bibcite{Borsuk1948}{{15}{}{{}}{{}}}
+\bibcite{Cech1932}{{16}{}{{}}{{}}}
+\bibcite{Vietoris1927}{{17}{}{{}}{{}}}
+\bibcite{ZOMORODIAN2010263}{{18}{}{{}}{{}}}
+\bibcite{rieser2024newconstructionvietorisripscomplex}{{19}{}{{}}{{}}}
+\bibcite{Bauer_2021}{{20}{}{{}}{{}}}
+\bibcite{Zomorodian2005}{{21}{}{{}}{{}}}
+\bibcite{10.1007/978-3-319-29228-1_11}{{22}{}{{}}{{}}}
+\bibcite{bubenik2015statisticaltopologicaldataanalysis}{{23}{}{{}}{{}}}
+\bibcite{chazal2013stochasticconvergencepersistencelandscapes}{{24}{}{{}}{{}}}
+\bibcite{kerber2016geometryhelpscomparepersistence}{{25}{}{{}}{{}}}
+\bibcite{10.1145/62212.62253}{{26}{}{{}}{{}}}
+\bibcite{Efrat2001}{{27}{}{{}}{{}}}
+\bibcite{Eckart_Young_1936}{{28}{}{{}}{{}}}
+\bibcite{Autoencoder}{{29}{}{{}}{{}}}
+\bibcite{mcinnes2020umapuniformmanifoldapproximation}{{30}{}{{}}{{}}}
+\bibcite{trofimov2023learningtopologypreservingdatarepresentations}{{31}{}{{}}{{}}}
+\bibcite{InformationValue}{{32}{}{{}}{{}}}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\newlabel{LastPage}{{}{12}{}{figure.9}{}}
+\gdef \@abspage@last{12}

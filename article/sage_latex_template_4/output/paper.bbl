@@ -1,0 +1,236 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{SDA}
+Mikhaylets E, Razorenova AM, Chernyshev V et~al.
+\newblock Sda: a data-driven algorithm that detects functional states applied
+  to the eeg of guhyasamaja meditation.
+\newblock \emph{Frontiers in Neuroinformatics} 2024; 17.
+\newblock \doi{10.3389/fninf.2023.1301718}.
+\newblock \urlprefix\url{https://doi.rg/10.3389/fninf.2023.1301718}.
+
+\bibitem{chazal2024topologicalanalysisdetectinganomalies}
+Chazal F, Royer M and Levrard C.
+\newblock Topological analysis for detecting anomalies (tada) in time series,
+  2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2406.06168}.
+\newblock \eprint{2406.06168}.
+
+\bibitem{rai2024identifyingextremeeventsstock}
+Rai A, Sharma BN, Luwang SR et~al.
+\newblock Identifying extreme events in the stock market: A topological data
+  analysis, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2405.16052}.
+\newblock \eprint{2405.16052}.
+
+\bibitem{heo2024persistenthomologyfeaturedtime}
+Heo E and Jung JH.
+\newblock Persistent homology of featured time series data and its
+  applications, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2405.04796}.
+\newblock \eprint{2405.04796}.
+
+\bibitem{chrétien2024timetopologicalanalysiseeg}
+Chrétien S, Gao B, Thebault-Guiochon A et~al.
+\newblock Time topological analysis of eeg using signature theory, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2404.15328}.
+\newblock \eprint{2404.15328}.
+
+\bibitem{dimontesano2024dynamicallymaintainingpersistenthomology}
+di~Montesano SC, Edelsbrunner H, Henzinger M et~al.
+\newblock Dynamically maintaining the persistent homology of time series, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2311.01115}.
+\newblock \eprint{2311.01115}.
+
+\bibitem{ost2024bananatreespersistencetime}
+Ost L, di~Montesano SC and Edelsbrunner H.
+\newblock Banana trees for the persistence in time series experimentally, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2405.17920}.
+\newblock \eprint{2405.17920}.
+
+\bibitem{cai2024topologicalfeaturesearchmethod}
+Cai T, Zhao G, Zang J et~al.
+\newblock Topological feature search method for multichannel eeg: Application
+  in adhd classification, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2404.06676}.
+\newblock \eprint{2404.06676}.
+
+\bibitem{deng2024twostagehierarchicalexplainablefeature}
+Deng Y, Albidah H, Dallal A et~al.
+\newblock Two-stage hierarchical and explainable feature selection framework
+  for dimensionality reduction in sleep staging, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2409.00565}.
+\newblock \eprint{2409.00565}.
+
+\bibitem{MNE}
+Gramfort A, Luessi M, Larson E et~al.
+\newblock Meg and eeg data analysis with mne-python.
+\newblock \emph{Frontiers in Neuroscience} 2013; 7.
+\newblock \doi{10.3389/fnins.2013.00267}.
+\newblock \urlprefix\url{https://doi.org/10.3389/fnins.2013.00267}.
+
+\bibitem{10.1007/BFb0091924}
+Takens F.
+\newblock Detecting strange attractors in turbulence.
+\newblock In Rand D and Young LS (eds.) \emph{Dynamical Systems and Turbulence,
+  Warwick 1980}. Berlin, Heidelberg: Springer Berlin Heidelberg.
+\newblock ISBN 978-3-540-38945-3, pp. 366--381.
+
+\bibitem{perea2013slidingwindowspersistenceapplication}
+Perea J and Harer J.
+\newblock Sliding windows and persistence: An application of topological
+  methods to signal analysis, 2013.
+\newblock \urlprefix\url{https://arxiv.org/abs/1307.6188}.
+\newblock \eprint{1307.6188}.
+
+\bibitem{PhysRevA.45.3403}
+Kennel MB, Brown R and Abarbanel HDI.
+\newblock Determining embedding dimension for phase-space reconstruction using
+  a geometrical construction.
+\newblock \emph{Phys Rev A} 1992; 45: 3403--3411.
+\newblock \doi{10.1103/PhysRevA.45.3403}.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.45.3403}.
+
+\bibitem{PhysRevA.33.1134}
+Fraser AM and Swinney HL.
+\newblock Independent coordinates for strange attractors from mutual
+  information.
+\newblock \emph{Phys Rev A} 1986; 33: 1134--1140.
+\newblock \doi{10.1103/PhysRevA.33.1134}.
+\newblock \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.33.1134}.
+
+\bibitem{Borsuk1948}
+Borsuk K.
+\newblock On the imbedding of systems of compacta in simplicial complexes.
+\newblock \emph{Fundamenta Mathematicae} 1948; 35(1): 217--234.
+\newblock \urlprefix\url{http://eudml.org/doc/213158}.
+
+\bibitem{Cech1932}
+Čech E.
+\newblock Théorie générale de l'homologie dans un espace quelconque.
+\newblock \emph{Fundamenta Mathematicae} 1932; 19(1): 149--183.
+\newblock \urlprefix\url{http://eudml.org/doc/212569}.
+
+\bibitem{Vietoris1927}
+Vietoris L.
+\newblock {\"U}ber den h{\"o}heren zusammenhang kompakter r{\"a}ume und eine
+  klasse von zusammenhangstreuen abbildungen.
+\newblock \emph{Mathematische Annalen} 1927; 97(1): 454--472.
+\newblock \doi{10.1007/BF01447877}.
+\newblock \urlprefix\url{https://doi.org/10.1007/BF01447877}.
+
+\bibitem{ZOMORODIAN2010263}
+Zomorodian A.
+\newblock Fast construction of the vietoris-rips complex.
+\newblock \emph{Computers \& Graphics} 2010; 34(3): 263--271.
+\newblock \doi{https://doi.org/10.1016/j.cag.2010.03.007}.
+\newblock \urlprefix\url{https://doi.org/10.1016/j.cag.2010.03.007}.
+\newblock Shape Modelling International (SMI) Conference 2010.
+
+\bibitem{rieser2024newconstructionvietorisripscomplex}
+Rieser A.
+\newblock A new construction of the vietoris-rips complex, 2024.
+\newblock \urlprefix\url{https://arxiv.org/abs/2301.07191}.
+\newblock \eprint{2301.07191}.
+
+\bibitem{Bauer_2021}
+Bauer U.
+\newblock Ripser: efficient computation of vietoris-rips persistence barcodes.
+\newblock \emph{Journal of Applied and Computational Topology} 2021; 5(3):
+  391--423.
+\newblock \doi{10.1007/s41468-021-00071-5}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/s41468-021-00071-5}.
+
+\bibitem{Zomorodian2005}
+Zomorodian A and Carlsson G.
+\newblock Computing persistent homology.
+\newblock \emph{Discrete {\&} Computational Geometry} 2005; 33(2): 249--274.
+\newblock \doi{10.1007/s00454-004-1146-y}.
+\newblock \urlprefix\url{https://doi.org/10.1007/s00454-004-1146-y}.
+
+\bibitem{10.1007/978-3-319-29228-1_11}
+Rucco M, Castiglione F, Merelli E et~al.
+\newblock Characterisation of the idiotypic immune network through persistent
+  entropy.
+\newblock In Battiston S, De~Pellegrini F, Caldarelli G et~al. (eds.)
+  \emph{Proceedings of ECCS 2014}. Cham: Springer International Publishing.
+\newblock ISBN 978-3-319-29228-1, pp. 117--128.
+
+\bibitem{bubenik2015statisticaltopologicaldataanalysis}
+Bubenik P.
+\newblock Statistical topological data analysis using persistence landscapes,
+  2015.
+\newblock \urlprefix\url{https://arxiv.org/abs/1207.6437}.
+\newblock \eprint{1207.6437}.
+
+\bibitem{chazal2013stochasticconvergencepersistencelandscapes}
+Chazal F, Fasy BT, Lecci F et~al.
+\newblock Stochastic convergence of persistence landscapes and silhouettes,
+  2013.
+\newblock \urlprefix\url{https://arxiv.org/abs/1312.0308}.
+\newblock \eprint{1312.0308}.
+
+\bibitem{kerber2016geometryhelpscomparepersistence}
+Kerber M, Morozov D and Nigmetov A.
+\newblock Geometry helps to compare persistence diagrams, 2016.
+\newblock \urlprefix\url{https://arxiv.org/abs/1606.03357}.
+\newblock \eprint{1606.03357}.
+
+\bibitem{10.1145/62212.62253}
+Vaidya P.
+\newblock Geometry helps in matching.
+\newblock In \emph{Proceedings of the Twentieth Annual ACM Symposium on Theory
+  of Computing}. STOC '88, New York, NY, USA: Association for Computing
+  Machinery.
+\newblock ISBN 0897912640, pp. 422--425.
+\newblock \doi{10.1145/62212.62253}.
+\newblock \urlprefix\url{https://doi.org/10.1145/62212.62253}.
+
+\bibitem{Efrat2001}
+Efrat A, Itai A and Katz MJ.
+\newblock Geometry helps in bottleneck matching and related problems.
+\newblock \emph{Algorithmica} 2001; 31(1): 1--28.
+\newblock \doi{10.1007/s00453-001-0016-8}.
+\newblock \urlprefix\url{https://doi.org/10.1007/s00453-001-0016-8}.
+
+\bibitem{Eckart_Young_1936}
+Eckart C and Young G.
+\newblock The approximation of one matrix by another of lower rank.
+\newblock \emph{Psychometrika} 1936; 1(3): 211--218.
+\newblock \doi{10.1007/BF02288367}.
+
+\bibitem{Autoencoder}
+Kramer MA.
+\newblock Nonlinear principal component analysis using autoassociative neural
+  networks.
+\newblock \emph{AIChE Journal} 1991; 37(2): 233--243.
+\newblock \doi{https://doi.org/10.1002/aic.690370209}.
+\newblock \urlprefix\url{https://doi.org/10.1002/aic.690370209}.
+
+\bibitem{mcinnes2020umapuniformmanifoldapproximation}
+McInnes L, Healy J and Melville J.
+\newblock Umap: Uniform manifold approximation and projection for dimension
+  reduction, 2020.
+\newblock \urlprefix\url{https://arxiv.org/abs/1802.03426}.
+\newblock \eprint{1802.03426}.
+
+\bibitem{trofimov2023learningtopologypreservingdatarepresentations}
+Trofimov I, Cherniavskii D, Tulchinskii E et~al.
+\newblock Learning topology-preserving data representations, 2023.
+\newblock \urlprefix\url{https://arxiv.org/abs/2302.00136}.
+\newblock \eprint{2302.00136}.
+
+\bibitem{InformationValue}
+Good IJ and Osteyee DB.
+\newblock \emph{Information, weight of evidence. The singularity between
+  probability measures and signal detection}.
+\newblock 1974 ed. Lecture notes in mathematics, Berlin, Germany: Springer,
+  1974.
+
+\end{thebibliography}

@@ -1,0 +1,182 @@
+\providecommand{\newblock}{}
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+% Bibliography created with iopart-num v2.1
+% /biblio/bibtex/contrib/iopart-num
+
+\bibitem{SDA}
+Mikhaylets E, Razorenova A~M, Chernyshev V, Syrov N, Yakovlev L, Boytsova J,
+  Kokurina E, Zhironkina Y, Medvedev S and Kaplan A 2024 {\em Frontiers in
+  Neuroinformatics\/} {\bf 17} ISSN 1662-5196
+  \urlprefix\url{https://doi.org/10.3389/fninf.2023.1301718}
+
+\bibitem{chazal2024topologicalanalysisdetectinganomalies}
+Chazal F, Royer M and Levrard C 2024 Topological analysis for detecting
+  anomalies (tada) in time series (\textit{Preprint} \eprint{2406.06168})
+  \urlprefix\url{https://arxiv.org/abs/2406.06168}
+
+\bibitem{rai2024identifyingextremeeventsstock}
+Rai A, Sharma B~N, Luwang S~R, Nurujjaman M and Majhi S 2024 Identifying
+  extreme events in the stock market: A topological data analysis
+  (\textit{Preprint} \eprint{2405.16052})
+  \urlprefix\url{https://arxiv.org/abs/2405.16052}
+
+\bibitem{heo2024persistenthomologyfeaturedtime}
+Heo E and Jung J~H 2024 Persistent homology of featured time series data and
+  its applications (\textit{Preprint} \eprint{2405.04796})
+  \urlprefix\url{https://arxiv.org/abs/2405.04796}
+
+\bibitem{chrétien2024timetopologicalanalysiseeg}
+Chrétien S, Gao B, Thebault-Guiochon A and Vaucher R 2024 Time topological
+  analysis of eeg using signature theory (\textit{Preprint}
+  \eprint{2404.15328}) \urlprefix\url{https://arxiv.org/abs/2404.15328}
+
+\bibitem{dimontesano2024dynamicallymaintainingpersistenthomology}
+di~Montesano S~C, Edelsbrunner H, Henzinger M and Ost L 2024 Dynamically
+  maintaining the persistent homology of time series (\textit{Preprint}
+  \eprint{2311.01115}) \urlprefix\url{https://arxiv.org/abs/2311.01115}
+
+\bibitem{ost2024bananatreespersistencetime}
+Ost L, di~Montesano S~C and Edelsbrunner H 2024 Banana trees for the
+  persistence in time series experimentally (\textit{Preprint}
+  \eprint{2405.17920}) \urlprefix\url{https://arxiv.org/abs/2405.17920}
+
+\bibitem{cai2024topologicalfeaturesearchmethod}
+Cai T, Zhao G, Zang J, Zong C, Zhang Z and Xue C 2024 Topological feature
+  search method for multichannel eeg: Application in adhd classification
+  (\textit{Preprint} \eprint{2404.06676})
+  \urlprefix\url{https://arxiv.org/abs/2404.06676}
+
+\bibitem{deng2024twostagehierarchicalexplainablefeature}
+Deng Y, Albidah H, Dallal A, Yin J and Mao Z~H 2024 Two-stage hierarchical and
+  explainable feature selection framework for dimensionality reduction in sleep
+  staging (\textit{Preprint} \eprint{2409.00565})
+  \urlprefix\url{https://arxiv.org/abs/2409.00565}
+
+\bibitem{MNE}
+Gramfort A, Luessi M, Larson E, Engemann D~A, Strohmeier D, Brodbeck C, Goj R,
+  Jas M, Brooks T, Parkkonen L and Hämäläinen M 2013 {\em Frontiers in
+  Neuroscience\/} {\bf 7} ISSN 1662-453X
+  \urlprefix\url{https://doi.org/10.3389/fnins.2013.00267}
+
+\bibitem{SleepEdf}
+Kemp B, Zwinderman A, Tuk B, Kamphuisen H and Oberye J 2000 {\em IEEE
+  Transactions on Biomedical Engineering\/} {\bf 47} 1185--1194
+
+\bibitem{PhysioNet}
+Goldberger A~L, Amaral L~A, Glass L, Hausdorff J~M, Ivanov P~C, Mark R~G,
+  Mietus J~E, Moody G~B, Peng C~K and Stanley H~E 2000 {\em Circulation\/} {\bf
+  101} e215--e220
+
+\bibitem{10.1007/BFb0091924}
+Takens F 1981 Detecting strange attractors in turbulence {\em Dynamical Systems
+  and Turbulence, Warwick 1980\/} ed Rand D and Young L~S (Berlin, Heidelberg:
+  Springer Berlin Heidelberg) pp 366--381 ISBN 978-3-540-38945-3
+
+\bibitem{perea2013slidingwindowspersistenceapplication}
+Perea J and Harer J 2013 Sliding windows and persistence: An application of
+  topological methods to signal analysis (\textit{Preprint} \eprint{1307.6188})
+  \urlprefix\url{https://arxiv.org/abs/1307.6188}
+
+\bibitem{PhysRevA.45.3403}
+Kennel M~B, Brown R and Abarbanel H~D~I 1992 {\em Phys. Rev. A\/} {\bf 45}(6)
+  3403--3411 \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.45.3403}
+
+\bibitem{PhysRevA.33.1134}
+Fraser A~M and Swinney H~L 1986 {\em Phys. Rev. A\/} {\bf 33}(2) 1134--1140
+  \urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevA.33.1134}
+
+\bibitem{Borsuk1948}
+Borsuk K 1948 {\em Fundamenta Mathematicae\/} {\bf 35} 217--234
+  \urlprefix\url{http://eudml.org/doc/213158}
+
+\bibitem{Cech1932}
+Čech E 1932 {\em Fundamenta Mathematicae\/} {\bf 19} 149--183
+  \urlprefix\url{http://eudml.org/doc/212569}
+
+\bibitem{Vietoris1927}
+Vietoris L 1927 {\em Mathematische Annalen\/} {\bf 97} 454--472 ISSN 1432-1807
+  \urlprefix\url{https://doi.org/10.1007/BF01447877}
+
+\bibitem{ZOMORODIAN2010263}
+Zomorodian A 2010 {\em Computers \& Graphics\/} {\bf 34} 263--271 ISSN
+  0097-8493 shape Modelling International (SMI) Conference 2010
+  \urlprefix\url{https://doi.org/10.1016/j.cag.2010.03.007}
+
+\bibitem{rieser2024newconstructionvietorisripscomplex}
+Rieser A 2024 A new construction of the vietoris-rips complex
+  (\textit{Preprint} \eprint{2301.07191})
+  \urlprefix\url{https://arxiv.org/abs/2301.07191}
+
+\bibitem{Bauer_2021}
+Bauer U 2021 {\em Journal of Applied and Computational Topology\/} {\bf 5}
+  391--423 ISSN 2367-1734
+  \urlprefix\url{http://dx.doi.org/10.1007/s41468-021-00071-5}
+
+\bibitem{Zomorodian2005}
+Zomorodian A and Carlsson G 2005 {\em Discrete {\&} Computational Geometry\/}
+  {\bf 33} 249--274 ISSN 1432-0444
+  \urlprefix\url{https://doi.org/10.1007/s00454-004-1146-y}
+
+\bibitem{10.1007/978-3-319-29228-1_11}
+Rucco M, Castiglione F, Merelli E and Pettini M 2016 Characterisation of the
+  idiotypic immune network through persistent entropy {\em Proceedings of ECCS
+  2014\/} ed Battiston S, De~Pellegrini F, Caldarelli G and Merelli E (Cham:
+  Springer International Publishing) pp 117--128 ISBN 978-3-319-29228-1
+
+\bibitem{bubenik2015statisticaltopologicaldataanalysis}
+Bubenik P 2015 Statistical topological data analysis using persistence
+  landscapes (\textit{Preprint} \eprint{1207.6437})
+  \urlprefix\url{https://arxiv.org/abs/1207.6437}
+
+\bibitem{chazal2013stochasticconvergencepersistencelandscapes}
+Chazal F, Fasy B~T, Lecci F, Rinaldo A and Wasserman L 2013 Stochastic
+  convergence of persistence landscapes and silhouettes (\textit{Preprint}
+  \eprint{1312.0308}) \urlprefix\url{https://arxiv.org/abs/1312.0308}
+
+\bibitem{kerber2016geometryhelpscomparepersistence}
+Kerber M, Morozov D and Nigmetov A 2016 Geometry helps to compare persistence
+  diagrams (\textit{Preprint} \eprint{1606.03357})
+  \urlprefix\url{https://arxiv.org/abs/1606.03357}
+
+\bibitem{10.1145/62212.62253}
+Vaidya P 1988 Geometry helps in matching {\em Proceedings of the Twentieth
+  Annual ACM Symposium on Theory of Computing\/} STOC '88 (New York, NY, USA:
+  Association for Computing Machinery) pp 422--425 ISBN 0897912640
+  \urlprefix\url{https://doi.org/10.1145/62212.62253}
+
+\bibitem{Efrat2001}
+Efrat A, Itai A and Katz M~J 2001 {\em Algorithmica\/} {\bf 31} 1--28 ISSN
+  1432-0541 \urlprefix\url{https://doi.org/10.1007/s00453-001-0016-8}
+
+\bibitem{Eckart_Young_1936}
+Eckart C and Young G 1936 {\em Psychometrika\/} {\bf 1} 211--218
+
+\bibitem{Autoencoder}
+Kramer M~A 1991 {\em AIChE Journal\/} {\bf 37} 233--243
+  \urlprefix\url{https://doi.org/10.1002/aic.690370209}
+
+\bibitem{mcinnes2020umapuniformmanifoldapproximation}
+McInnes L, Healy J and Melville J 2020 Umap: Uniform manifold approximation and
+  projection for dimension reduction (\textit{Preprint} \eprint{1802.03426})
+  \urlprefix\url{https://arxiv.org/abs/1802.03426}
+
+\bibitem{trofimov2023learningtopologypreservingdatarepresentations}
+Trofimov I, Cherniavskii D, Tulchinskii E, Balabin N, Burnaev E and Barannikov
+  S 2023 Learning topology-preserving data representations (\textit{Preprint}
+  \eprint{2302.00136}) \urlprefix\url{https://arxiv.org/abs/2302.00136}
+
+\bibitem{InformationValue}
+Good I~J and Osteyee D~B 1974 {\em Information, weight of evidence. The
+  singularity between probability measures and signal detection. 162 pp.\/}
+  1974th ed Lecture notes in mathematics (Berlin, Germany: Springer)
+
+\bibitem{Fowlkes01091983}
+Fowlkes E~B and Mallows C~L 1983 {\em Journal of the American Statistical
+  Association\/} {\bf 78} 553--569
+  \urlprefix\url{https://doi.org/10.1080/01621459.1983.10478008}
+
+\end{thebibliography}

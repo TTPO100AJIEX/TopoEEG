@@ -1,0 +1,144 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Bauer(2021)}]{Bauer_2021}
+Bauer U (2021) Ripser: efficient computation of vietoris-rips persistence
+  barcodes. Journal of Applied and Computational Topology 5(3):391--423.
+  \doi{10.1007/s41468-021-00071-5}
+
+\bibitem[{Bubenik(2015)}]{bubenik2015statisticaltopologicaldataanalysis}
+Bubenik P (2015) Statistical topological data analysis using persistence
+  landscapes. J Mach Learn Res 16(1):77–102
+
+\bibitem[{Cai et~al.(2025)Cai, Zhao, Zang, Zong, Zhang, and
+  Xue}]{cai2024topologicalfeaturesearchmethod}
+Cai T, Zhao G, Zang J, et~al (2025) Topological feature search method for
+  multichannel eeg: Application in adhd classification. Biomedical Signal
+  Processing and Control 100:107153. \doi{10.1016/j.bspc.2024.107153}
+
+\bibitem[{Chazal et~al.(2014)Chazal, Fasy, Lecci, Rinaldo, and
+  Wasserman}]{chazal2013stochasticconvergencepersistencelandscapes}
+Chazal F, Fasy BT, Lecci F, et~al (2014) Stochastic convergence of persistence
+  landscapes and silhouettes. In: Proceedings of the Thirtieth Annual Symposium
+  on Computational Geometry. Association for Computing Machinery, New York, NY,
+  USA, SOCG'14, p 474–483, \doi{10.1145/2582112.2582128}
+
+\bibitem[{Chazal et~al.(2024)Chazal, Levrard, and
+  Royer}]{chazal2024topologicalanalysisdetectinganomalies}
+Chazal F, Levrard C, Royer M (2024) Topological analysis for detecting
+  anomalies (tada) in dependent sequences: application to time series. J Mach
+  Learn Res 25(1)
+
+\bibitem[{Chrétien et~al.(2024)Chrétien, Gao, Thebault-Guiochon, and
+  Vaucher}]{chrétien2024timetopologicalanalysiseeg}
+Chrétien S, Gao B, Thebault-Guiochon A, et~al (2024) Time topological analysis
+  of eeg using signature theory. \doi{10.48550/arXiv.2404.15328}
+
+\bibitem[{Deng et~al.(2024)Deng, Albidah, Dallal, Yin, and
+  Mao}]{deng2024twostagehierarchicalexplainablefeature}
+Deng Y, Albidah H, Dallal A, et~al (2024) Two-stage hierarchical and
+  explainable feature selection framework for dimensionality reduction in sleep
+  staging. \doi{10.48550/arXiv.2409.00565}
+
+\bibitem[{Efrat et~al.(2001)Efrat, Itai, and Katz}]{Efrat2001}
+Efrat A, Itai A, Katz MJ (2001) Geometry helps in bottleneck matching and
+  related problems. Algorithmica 31(1):1--28. \doi{10.1007/s00453-001-0016-8}
+
+\bibitem[{Fowlkes and Mallows(1983)}]{Fowlkes01091983}
+Fowlkes EB, Mallows CL (1983) A method for comparing two hierarchical
+  clusterings. Journal of the American Statistical Association
+  78(383):553--569. \doi{10.1080/01621459.1983.10478008}
+
+\bibitem[{Fraser and Swinney(1986)}]{PhysRevA.33.1134}
+Fraser AM, Swinney HL (1986) Independent coordinates for strange attractors
+  from mutual information. Phys Rev A 33:1134--1140.
+  \doi{10.1103/PhysRevA.33.1134}
+
+\bibitem[{Goldberger et~al.(2000)Goldberger, Amaral, Glass, Hausdorff, Ivanov,
+  Mark, Mietus, Moody, Peng, and Stanley}]{PhysioNet}
+Goldberger AL, Amaral LA, Glass L, et~al (2000) {PhysioBank, PhysioToolkit, and
+  PhysioNet: Components of a new research resource for complex physiologic
+  signals}. Circulation 101(23):e215--e220
+
+\bibitem[{Good and Osteyee(1974)}]{InformationValue}
+Good IJ, Osteyee DB (1974) Information, weight of evidence. The singularity
+  between probability measures and signal detection. 162 pp., 1974th edn.
+  Lecture notes in mathematics, Springer, Berlin, Germany
+
+\bibitem[{Heo and Jung(2024)}]{heo2024persistenthomologyfeaturedtime}
+Heo E, Jung JH (2024) Persistent homology of featured time series data and its
+  applications. AIMS Mathematics 9(10):27028--27057.
+  \doi{10.3934/math.20241315}
+
+\bibitem[{Kemp et~al.(2000)Kemp, Zwinderman, Tuk, Kamphuisen, and
+  Oberye}]{SleepEdf}
+Kemp B, Zwinderman A, Tuk B, et~al (2000) Analysis of a sleep-dependent
+  neuronal feedback loop: the slow-wave microcontinuity of the eeg. IEEE
+  Transactions on Biomedical Engineering 47(9):1185--1194.
+  \doi{10.1109/10.867928}
+
+\bibitem[{Kennel et~al.(1992)Kennel, Brown, and Abarbanel}]{PhysRevA.45.3403}
+Kennel MB, Brown R, Abarbanel HDI (1992) Determining embedding dimension for
+  phase-space reconstruction using a geometrical construction. Phys Rev A
+  45:3403--3411. \doi{10.1103/PhysRevA.45.3403}
+
+\bibitem[{Mikhaylets et~al.(2024)Mikhaylets, Razorenova, Chernyshev, Syrov,
+  Yakovlev, Boytsova, Kokurina, Zhironkina, Medvedev, and Kaplan}]{SDA}
+Mikhaylets E, Razorenova AM, Chernyshev V, et~al (2024) Sda: a data-driven
+  algorithm that detects functional states applied to the eeg of guhyasamaja
+  meditation. Frontiers in Neuroinformatics 17.
+  \doi{10.3389/fninf.2023.1301718}
+
+\bibitem[{Montesano et~al.(2024)Montesano, Edelsbrunner, Henzinger, and
+  Ost}]{dimontesano2024dynamicallymaintainingpersistenthomology}
+Montesano S, Edelsbrunner H, Henzinger M, et~al (2024) Dynamically Maintaining
+  the Persistent Homology of Time Series, Society for Industrial and Applied
+  Mathematics, pp 243--295. \doi{10.1137/1.9781611977912.11}
+
+\bibitem[{Ost et~al.(2025)Ost, Cultrera~di Montesano, and
+  Edelsbrunner}]{ost2024bananatreespersistencetime}
+Ost L, Cultrera~di Montesano S, Edelsbrunner H (2025) {Banana Trees for the
+  Persistence in Time Series Experimentally}. In: 41st International Symposium
+  on Computational Geometry, vol 332. Schloss Dagstuhl -- Leibniz-Zentrum
+  f{\"u}r Informatik, pp 71:1--71:13, \doi{10.4230/LIPIcs.SoCG.2025.71}
+
+\bibitem[{Perea and
+  Harer(2015)}]{perea2013slidingwindowspersistenceapplication}
+Perea JA, Harer J (2015) Sliding windows and persistence: An application of
+  topological methods to signal analysis. Foundations of Computational
+  Mathematics 15(3):799--838. \doi{10.1007/s10208-014-9206-z}
+
+\bibitem[{Rai et~al.(2024)Rai, Nath~Sharma, Rabindrajit~Luwang, Nurujjaman, and
+  Majhi}]{rai2024identifyingextremeeventsstock}
+Rai A, Nath~Sharma B, Rabindrajit~Luwang S, et~al (2024) Identifying extreme
+  events in the stock market: A topological data analysis. Chaos: An
+  Interdisciplinary Journal of Nonlinear Science 34(10).
+  \doi{10.1063/5.0220424}
+
+\bibitem[{Rucco et~al.(2016)Rucco, Castiglione, Merelli, and
+  Pettini}]{10.1007/978-3-319-29228-1_11}
+Rucco M, Castiglione F, Merelli E, et~al (2016) Characterisation of the
+  idiotypic immune network through persistent entropy. In: Battiston S,
+  De~Pellegrini F, Caldarelli G, et~al (eds) Proceedings of ECCS 2014. Springer
+  International Publishing, Cham, pp 117--128
+
+\bibitem[{Takens(1981)}]{10.1007/BFb0091924}
+Takens F (1981) Detecting strange attractors in turbulence. In: Rand D, Young
+  LS (eds) Dynamical Systems and Turbulence, Warwick 1980. Springer Berlin
+  Heidelberg, Berlin, Heidelberg, pp 366--381
+
+\bibitem[{Vietoris(1927)}]{Vietoris1927}
+Vietoris L (1927) {\"U}ber den h{\"o}heren zusammenhang kompakter r{\"a}ume und
+  eine klasse von zusammenhangstreuen abbildungen. Mathematische Annalen
+  97(1):454--472. \doi{10.1007/BF01447877}
+
+\bibitem[{Zomorodian and Carlsson(2005)}]{Zomorodian2005}
+Zomorodian A, Carlsson G (2005) Computing persistent homology. Discrete {\&}
+  Computational Geometry 33(2):249--274. \doi{10.1007/s00454-004-1146-y}
+
+\end{thebibliography}
