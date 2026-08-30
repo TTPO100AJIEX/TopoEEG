@@ -187,16 +187,17 @@ class QSDA(SDA):
             scores["normalized_score"] = sklearn.preprocessing.MinMaxScaler().fit_transform(scores[["score"]])
             scores.to_csv(scores_file, index = False)
 
+        unique_values_filter = scores["unique_values"] >= self.min_unique_values
+
         if isinstance(self.threshold, int):
-            score_values = scores["normalized_score"].to_numpy()
+            score_values = scores[unique_values_filter]["normalized_score"].to_numpy()
             score_values = numpy.sort(score_values)[::-1]
-            threshold = numpy.round(score_values[self.threshold], 2)
+            threshold = score_values[self.threshold]
         else:
             threshold = self.threshold
         print('Using threshold', threshold)
         
         score_filter = scores["normalized_score"] >= threshold
-        unique_values_filter = scores["unique_values"] >= self.min_unique_values
 
         feature_idx = list(scores[score_filter & unique_values_filter]["name"])
         return features[feature_idx], scores
